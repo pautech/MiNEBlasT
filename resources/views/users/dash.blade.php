@@ -63,3 +63,4 @@
         </div>
         <img class="image mx-auto d-block" src={{asset('Avatar.png')}}  style="width: 450px; margin-top: 50px;" alt="Avatar"/>
 @endsection
+

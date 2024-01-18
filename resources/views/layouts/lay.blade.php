@@ -22,8 +22,6 @@
     <!-- Link to your custom CSS file -->
     <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
 
-    <!-- Include your compiled JavaScript file -->
-    <!-- <script src="{{ mix('js/app.js') }}"></script> -->
 
     <link
         rel="stylesheet"
