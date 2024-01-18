@@ -18,7 +18,9 @@ class User extends Authenticatable
      * @var array<int, string>
      */
     protected $fillable = [
-        'name',
+        'firstname',
+        'lastname',
+        'username',
         'email',
         'password',
     ];
@@ -32,6 +34,16 @@ class User extends Authenticatable
         'password',
         'remember_token',
     ];
+    protected static function boot()
+    {
+        parent::boot();
+
+        static::creating(function ($instructor) {
+
+            // $instructor->password = bcrypt('abcde12345');
+        });
+    }
+
 
     /**
      * The attributes that should be cast.

@@ -1,0 +1,115 @@
+/* public/css/styles.css */
+
+body {
+    background-image: url("{{ asset('grayscale-shot-rock-slide.jpg') }}");
+    /* font-family: 'Roboto', sans-serif; */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    /* padding-top: 200px; */
+}
+
+header {
+    background-color: #2196F3;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+.carding {
+    /* background-color: #2196F3; */
+    /* color: white; */
+    padding: 20px;
+    text-align: center;
+
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 20px auto;
+    width: 100%;
+    max-width: 1000px;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+    padding-top: 10%;
+}
+.image{
+    width: 60vw;
+}
+.card-title {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+footer {
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+
+#flex-container {
+    display: flex;
+    justify-content: space-between; /* Adjust as needed */
+    align-items: center; /* Adjust as needed */
+}
+#mina {
+    font-family: 'Blackadder ITC';
+    font-size: 88px;
+}
+
+#ina {
+    font-family: 'Blackadder ITC';
+    font-size: 66px;
+}
+
+#D {
+    font-family: 'Copperplate Gothic Bold';
+    font-size: 96px;
+}
+#d {
+    font-family: 'Copperplate Gothic Bold';
+    font-size: 66px;
+}
+.maroon{
+    color:#8B4513;
+}
+#qweqwe{
+    font-family: 'Freestyle Script';
+    font-size: 30px;
+}
+@media (max-width: 540px){
+    .btn-outline-secondary{
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        font-size: x-small;
+    }
+}
+
+@media (min-width: 576px) {
+    .btn-outline-secondary{
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        font-size: small;
+    }
+}
+
+@media (min-width: 768px) {
+    .btn-outline-secondary{
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        font-size: large;
+    }
+}
+
+@media (min-width: 992px) {
+    .btn-outline-secondary{
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        font-size: x-large;
+    }
+}
+.links{
+
+}
