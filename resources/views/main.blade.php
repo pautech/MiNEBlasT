@@ -2,6 +2,7 @@
 
 @section('content')
     <!-- <header> -->
+
         <div class="container-fluid align-items-center">
             <div class="container carding">
 

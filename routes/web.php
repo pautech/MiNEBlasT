@@ -15,7 +15,24 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
+    return view('home');
+});
+Route::get('/menu', function () {
+    return view('menu');
+});
+Route::get('/about', function () {
+    return view('about');
+});
+Route::get('/references', function () {
+    return view('references');
+});
+
+Route::get('/checkpoint', function () {
     return view('main');
+});
+
+Route::get('/user', function () {
+    return view('users.dash');
 });
 
 use App\Http\Controllers\UserController;
