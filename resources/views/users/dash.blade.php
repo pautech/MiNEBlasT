@@ -31,6 +31,7 @@
 
         </div> -->
         <script>
+
             // JSON object with different messages
             document.addEventListener('DOMContentLoaded', function () {
             // Sample JSON data
@@ -44,22 +45,33 @@
             // Initialize index for cycling through messages
             var currentIndex = 0;
 
+            updateDynamicContent();
             // Function to update dynamic content
             function updateDynamicContent() {
                 var dynamicContentDiv = document.getElementById('dynamicContent');
                 var data = jsonData[currentIndex];
                 // dynamicContentDiv.innerHTML = '<p><strong>' + Object.keys(data)[0] + ':</strong> ' + Object.values(data)[0] + '</p>';
-                dynamicContentDiv.innerHTML = '<p>' + Object.values(data)[0] + '</p>';
+                var qwe = dynamicContentDiv.innerHTML = '<p>' + Object.values(data)[0] + '</p>';
 
                 // Increment index or reset to 0
                 currentIndex = (currentIndex + 1) % jsonData.length;
 
+                const message = new SpeechSynthesisUtterance();
+
+                // set the text to be spoken
+                message.text = Object.values(data)[0];
+
+                // create an instance of the speech synthesis object
+                const speechSynthesis = window.speechSynthesis;
+
+                // start speaking
+                speechSynthesis.speak(message);
+
                 // Set a 5-second delay before updating the content again
-                setTimeout(updateDynamicContent, 5000);
+                setTimeout(updateDynamicContent, 12000);
+
             }
 
-            // Initial call to start the cycle
-            updateDynamicContent();
             });
         </script>
         <img class="image mx-auto d-block" src={{asset('Avatar.png')}}  style="width: 450px; margin-top: 50px;" alt="Avatar"/>
