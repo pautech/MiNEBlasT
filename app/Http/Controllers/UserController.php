@@ -29,7 +29,7 @@ class UserController extends Controller
             'firstname' => 'required|string|max:255',
             'lastname' => 'required|string|max:255',
             'password' => 'required|string|min:8',
-            'password_confirmation' => 'required|string|min:8',
+            'password_confirmation' => '',
         ]);
         // if ($request->password !== $request->password_confirmation) {
         //     return redirect()->back()->withErrors(['password_confirmation' => 'The password confirmation does not match.'])->withInput();
@@ -67,7 +67,7 @@ class UserController extends Controller
 
         if (Auth::guard('web')->attempt($credentials)) {
             // Authentication passed
-            return redirect()->intended('/u');
+            return redirect()->intended('/user');
         } else {
             // Authentication failed
             return back()->withErrors(['username' => 'Invalid credentials']);

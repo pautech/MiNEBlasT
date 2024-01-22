@@ -37,11 +37,11 @@ Route::get('/user', function () {
 
 use App\Http\Controllers\UserController;
 
-Route::middleware(['auth:web'])->group(function () {
-
 Route::resource('u', UserController::class);
 
-Route::match(['get', 'post'], '/ulogout', [UserController::class, 'ulogout'])->name('ulogout');
+Route::middleware(['auth:web'])->group(function () {
+
+    Route::match(['get', 'post'], '/ulogout', [UserController::class, 'ulogout'])->name('ulogout');
 });
 
 Route::get('/registration', [UserController::class, 'registration'])->name('registration');

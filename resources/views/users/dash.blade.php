@@ -34,43 +34,43 @@
 
             // JSON object with different messages
             document.addEventListener('DOMContentLoaded', function () {
-            // Sample JSON data
-            var jsonData = [
-                { "message": "Are we meeting today? Project has been already finished and I have results to show you." },
-                { "introduction": "Let us step into the thrilling world of underground mining drilling and blasting cycle operations! Experience the orchestrated dance between machinery and precision techniques beneath the Earth’s surface." },
-                { "invitation": "So, get ready for an immersive experience as we navigate the pulse of the underground. Let the adventure begin!" },
-                { "question": "Are you excited? Now, click the explore button below." }
-            ];
+                // Sample JSON data
+                var jsonData = [
+                    { "message": "Are we meeting today? Project has been already finished and I have results to show you." },
+                    { "introduction": "Let us step into the thrilling world of underground mining drilling and blasting cycle operations! Experience the orchestrated dance between machinery and precision techniques beneath the Earth’s surface." },
+                    { "invitation": "So, get ready for an immersive experience as we navigate the pulse of the underground. Let the adventure begin!" },
+                    { "question": "Are you excited? Now, click the explore button below." }
+                ];
 
-            // Initialize index for cycling through messages
-            var currentIndex = 0;
+                // Initialize index for cycling through messages
+                var currentIndex = 0;
 
-            updateDynamicContent();
-            // Function to update dynamic content
-            function updateDynamicContent() {
-                var dynamicContentDiv = document.getElementById('dynamicContent');
-                var data = jsonData[currentIndex];
-                // dynamicContentDiv.innerHTML = '<p><strong>' + Object.keys(data)[0] + ':</strong> ' + Object.values(data)[0] + '</p>';
-                var qwe = dynamicContentDiv.innerHTML = '<p>' + Object.values(data)[0] + '</p>';
+                updateDynamicContent();
+                // Function to update dynamic content
+                function updateDynamicContent() {
+                    var dynamicContentDiv = document.getElementById('dynamicContent');
+                    var data = jsonData[currentIndex];
+                    // dynamicContentDiv.innerHTML = '<p><strong>' + Object.keys(data)[0] + ':</strong> ' + Object.values(data)[0] + '</p>';
+                    var qwe = dynamicContentDiv.innerHTML = '<p>' + Object.values(data)[0] + '</p>';
 
-                // Increment index or reset to 0
-                currentIndex = (currentIndex + 1) % jsonData.length;
+                    // Increment index or reset to 0
+                    currentIndex = (currentIndex + 1) % jsonData.length;
 
-                const message = new SpeechSynthesisUtterance();
+                    const message = new SpeechSynthesisUtterance();
 
-                // set the text to be spoken
-                message.text = Object.values(data)[0];
+                    // set the text to be spoken
+                    message.text = Object.values(data)[0];
 
-                // create an instance of the speech synthesis object
-                const speechSynthesis = window.speechSynthesis;
+                    // create an instance of the speech synthesis object
+                    const speechSynthesis = window.speechSynthesis;
 
-                // start speaking
-                speechSynthesis.speak(message);
+                    // start speaking
+                    speechSynthesis.speak(message);
 
-                // Set a 5-second delay before updating the content again
-                setTimeout(updateDynamicContent, 12000);
+                    // Set a 5-second delay before updating the content again
+                    setTimeout(updateDynamicContent, 12000);
 
-            }
+                }
 
             });
         </script>
