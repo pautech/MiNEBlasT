@@ -3,12 +3,12 @@
 @extends('layouts.lay')
 
 @section('content')
-    <section class="gradient-form h-300" style="background-color: #eee; margin-top: -0px;">
-        <div class="container-fluid h-100" style="margin-bottom: -150px;">
-            <div class="container  py-5" style="margin-top: -10px;">
-                <div class="row d-flex justify-content-center align-items-center">
-                    <div class="col-xl-10">
-                        <div class="card rounded-3 text-black">
+    <section class="gradient-form h-300 d-flex align-content-center" style="background-color: #e7d5b9; margin-top: -0px;">
+        <div class="container-fluid h-100  d-flex align-items-center " style="margin-bottom: -150px;">
+            <div class="container">
+                <div class="row d-flex justify-content-lg-center  ">
+                    <div class="col-xl-10 mx-auto">
+                        <div class="card rounded-3 text-black shadow-lg">
                             <div class="row g-0">
 
 
@@ -27,7 +27,7 @@
                                     <div class="card-body p-md-5 mx-md-4">
 
                                         <div class="text-center">
-                                            <img class="image" src="{{ asset('mineblast-final.png') }}" style="width: 250px;" alt="Mineblast Image"/>
+                                            <img class="image" src="{{ asset('img/LOGO.png') }}" style="width: 250px;" alt="Mineblast Image"/>
                                         </div>
 
                                         <form action="{{ route('u.store') }}" method="post">
@@ -73,7 +73,7 @@
                                                 </div>
 
                                                 <div class="mb-3 col-12 d-flex flex-wrap justify-content-center">
-                                                    <button type="submit" class="btn btn-primary">Register</button>
+                                                    <button type="submit" class="btn btn-primary btn-lg  ">Register</button>
                                                 </div>
                                             </div>
                                         </form>

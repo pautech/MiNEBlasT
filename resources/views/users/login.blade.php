@@ -3,11 +3,11 @@
 @extends('layouts.lay')
 
 @section('content')
-    <section class="h-100 gradient-form" style="background-color: #eee;">
-        <div class="container py-5 h-100">
-            <div class="row d-flex justify-content-center align-items-center h-100">
-                <div class="col-xl-10">
-                    <div class="card rounded-3 text-black">
+    <section class="h-100 gradient-form " style="background-color:#e7d5b9">
+        <div class="container py-5 h-100 ">
+            <div class="row d-flex justify-content-center align-items-center h-100 ">
+                <div class="col-xl-10 " >
+                    <div class="card rounded-4 text-black shadow-lg">
                         <div class="row g-0">
                             <div class="col-lg-6">
                                 <div class="card-body p-md-5 mx-md-4">
@@ -15,7 +15,7 @@
                                     <div class="text-center">
                                         <!-- <h4 class="mt-1 mb-5 pb-1">MinaDrillBlast</h4> -->
 
-                                        <img class="image" src={{asset('mineblast-final.png')}}  style="width: 250px;" alt="Mineblast Image"/>
+                                        <img class="image" src={{ asset('img/LOGO.png') }}  style="width: 250px;" alt="Mineblast Image"/>
                                     </div>
 
                                     <form method="POST" action="{{ route('ulogin') }}">
@@ -49,20 +49,20 @@
                                             @enderror
                                         </div>
                                         <div class="text-center pt-1 mb-5 pb-1">
-                                            <button class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3" type="submit">Log
-                                                in</button>
+                                            <button class="btn  btn-block fa-lg  mb-3 text-light badge-primary shadow"style="background-color: #b4a07d" type="submit">Log In</button>
                                             <a class="text-muted" href="#!">Forgot password?</a>
                                         </div>
 
                                         <div class="d-flex align-items-center justify-content-center pb-4">
                                             <p class="mb-0 me-2">Don't have an account?</p>
-                                            <a type="button" class="btn btn-outline-danger" href="{{ route('registration') }}">Create new</a>
+                                            <a type="button" class="btn create-btn text-decoration-underline" href="{{ route('registration') }}">Create Account</a>
                                         </div>
 
                                     </form>
 
                                 </div>
                             </div>
+                            
                             <div class="col-lg-6 d-flex align-items-center gradient-custom-2">
                                 <div class="text-white px-3 py-4 p-md-5 mx-md-4">
                                     <h4 class="mb-4">We are more than just a company</h4>
