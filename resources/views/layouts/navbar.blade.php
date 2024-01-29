@@ -1,30 +1,35 @@
-
-    <!-- <img class="image" src={{asset('mineblast-final.png')}}  style="width: 250px;" alt="Mineblast Image"/> -->
-
-    <nav class="navbar navbar-expand-lg navbar-light bg-light py-5 border border-bottom border-5">
-        <!-- <a class="navbar-brand" href="#">Navbar w/ text</a> -->
-        <img class="image" src={{asset('mineblast-final.png')}}  style="width: 250px;" alt="Mineblast Image"/>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarText">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="menu">Menu</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="about">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="references">References</a>
-                </li>
-            </ul>
-            <!-- <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
-            </form> -->
-        </div>
-    </nav>
+<nav class="navbar navbar-expand-lg bg-body-tertiary ">
+  <div class="container-fluid">
+            <a class="navbar-brand " href="/"><img class="image" src="{{ asset('img/LOGO.png') }}"  style="width: 250px;" alt="Mineblast Image"/>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" >
+                <span><img class="image" src="{{ asset('img/menu-bar.png') }}"  style="width: 40px;" alt="Mineblast Image"/></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent"style="margin-left: 3rem;" >
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto fw-bold">
+                        <li class="nav-item">
+                        <a class="nav-link active pr-5 " aria-current="page" href="#">Home</a>
+                        </li>
+                    
+                        <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle pr-5" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Menu
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item " href="#" style="font-size: 1.2em;">Introduction</a></li>
+                            <li><a class="dropdown-item" href="#"style="font-size: 1.2em;">Test Your Knowledge</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#"style="font-size: 1.2em;">DashBoard</a></li>
+                            <li><a class="dropdown-item" href="#"style="font-size: 1.2em;">Glossary</a></li>
+                        </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link pr-5" href="#">About</a> </li>
+                        <li class="nav-item"><a class="nav-link pr-5" href="#">References</a> </li>
+                        <li class="nav-item"><a class="nav-link pr-5" href="#">Logout</a> </li>
+                        
+                    </ul>
+            
+             </div>
+            
+  </div>
+</nav>

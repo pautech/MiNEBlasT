@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+    return view('menu');
 });
 Route::get('/menu', function () {
     return view('menu');
@@ -30,8 +30,12 @@ Route::get('/references', function () {
 Route::get('/checkpoint', function () {
     return view('main');
 });
+Route::get('/checkpoint', function () {
+    return view('main');
+})->name('checkpoint');
 
-Route::get('/user', function () {
+
+Route::get('/dashboard', function () {
     return view('users.dash');
 });
 

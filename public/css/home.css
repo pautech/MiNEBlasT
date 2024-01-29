@@ -41,3 +41,11 @@ button{
     background-color: #863b09;
     color: white;
 }
+.landing{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  background-color: #e7d5b9;
+
+}

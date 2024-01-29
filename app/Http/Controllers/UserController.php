@@ -67,7 +67,7 @@ class UserController extends Controller
 
         if (Auth::guard('web')->attempt($credentials)) {
             // Authentication passed
-            return redirect()->intended('/user');
+            return redirect()->intended('/dashboard');
         } else {
             // Authentication failed
             return back()->withErrors(['username' => 'Invalid credentials']);
