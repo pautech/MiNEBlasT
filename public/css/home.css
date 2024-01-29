@@ -1,3 +1,9 @@
+body{
+
+    background-color: #e7d5b9;
+}
+
+
 .main-container{
     height: 100vh;
     display: flex;
@@ -49,3 +55,44 @@ button{
   background-color: #e7d5b9;
 
 }
+.dashboard{
+    background-color: #e7d5b9;
+    height: 86.6vh;
+  
+}
+
+.speech-bubble {
+    position: relative;
+    display: inline-block;
+    padding: 20px;
+    background-color: #3498db;
+    color: #fff;
+    border-radius: 10px;
+    animation: bounceIn 3s ease-in-out infinite;
+  }
+
+  .speech-bubble::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    margin-left: -14px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: #3498db transparent transparent transparent;
+  }
+
+  @keyframes bounceIn {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-20px);
+    }
+    60% {
+      transform: translateY(-10px);
+    }
+  }
+ 
+
+  
+ 
