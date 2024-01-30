@@ -30,7 +30,7 @@
                                             <img class="image" src="{{ asset('img/LOGO.png') }}" style="width: 250px;" alt="Mineblast Image"/>
                                         </div>
 
-                                        <form action="{{ route('u.store') }}" method="post">
+                                        <form action="{{ route('registration') }}" method="post">
                                             @csrf
 
                                             <div class="row">

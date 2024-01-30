@@ -1,7 +1,8 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
 
+use App\Http\Controllers\UserController;
+use Illuminate\Support\Facades\Route;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,10 +17,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('menu');
-});
-Route::get('/menu', function () {
-    return view('menu');
-});
+})->name('home'); // You can replace 'home' with your desired name
+
 Route::get('/about', function () {
     return view('about');
 });
@@ -39,11 +38,15 @@ Route::get('/dashboard', function () {
     return view('users.dash');
 });
 
-use App\Http\Controllers\UserController;
 
-Route::resource('u', UserController::class);
+
+
+// ... (existing routes)
 
 Route::middleware(['auth:web'])->group(function () {
+    Route::get('/dashboard', function () {
+        return view('users.dash');
+    })->name('dashboard');
 
     Route::match(['get', 'post'], '/ulogout', [UserController::class, 'ulogout'])->name('ulogout');
 });
@@ -51,9 +54,6 @@ Route::middleware(['auth:web'])->group(function () {
 Route::get('/registration', [UserController::class, 'registration'])->name('registration');
 
 
-
-// // Add the following login routes
+// Add the following login routes
 Route::get('/ulogin', [UserController::class, 'showLoginForm'])->name('ulogin');
 Route::post('/ulogin', [UserController::class, 'ulogin']);
-
-

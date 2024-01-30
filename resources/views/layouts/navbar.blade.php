@@ -25,11 +25,14 @@
                         </li>
                         <li class="nav-item"><a class="nav-link pr-5" href="#">About</a> </li>
                         <li class="nav-item"><a class="nav-link pr-5" href="#">References</a> </li>
-                        <li class="nav-item"><a class="nav-link pr-5" href="#">Logout</a> </li>
+                        <li class="nav-item"><a class="nav-link pr-5" href="{{ route('ulogout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Logout</a> </li>
                         
                     </ul>
             
              </div>
             
   </div>
+  <form id="logout-form" action="{{ route('ulogout') }}" method="POST" style="display: none;">
+    @csrf
+</form>
 </nav>
