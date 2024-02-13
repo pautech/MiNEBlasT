@@ -10,7 +10,7 @@
   
 </div>
 
-<script>
+<!--<script>
 document.addEventListener('DOMContentLoaded', function () {
     var jsonData = [
         { "message": "Greetings, Mining Engineers! This is Engineer Lorry" },
@@ -55,4 +55,5 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 });
 </script>
+--->
 @endsection

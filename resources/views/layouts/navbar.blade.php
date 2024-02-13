@@ -23,7 +23,7 @@
                             <li><a class="dropdown-item" href="#"style="font-size: 1.2em;">Glossary</a></li>
                         </ul>
                         </li>
-                        <li class="nav-item"><a class="nav-link pr-5" href="#">About</a> </li>
+                        <li class="nav-item"><a class="nav-link pr-5" href="{{ route('about') }}">About</a> </li>
                         <li class="nav-item"><a class="nav-link pr-5" href="#">References</a> </li>
                         <li class="nav-item"><a class="nav-link pr-5" href="{{ route('ulogout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Logout</a> </li>
                         

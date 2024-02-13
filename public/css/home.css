@@ -95,6 +95,24 @@ button{
  
 
   
+  .about-con {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
 
-  
+.main-p {
+height: 100vh;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 3rem;
+
+}
+.bold-text{
+  font-weight: bold;
+}
+
  
