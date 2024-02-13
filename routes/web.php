@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('menu');
+    return view('main');
 })->name('home'); // You can replace 'home' with your desired name
 
 Route::get('/about', function () {
@@ -27,17 +27,15 @@ Route::get('/references', function () {
     return view('references');
 });
 
+
 Route::get('/checkpoint', function () {
-    return view('main');
-});
-Route::get('/checkpoint', function () {
-    return view('main');
+    return view('menu');
 })->name('checkpoint');
 
 
 Route::get('/dashboard', function () {
     return view('users.dash');
-});
+})->name('dashboard');
 
 
 

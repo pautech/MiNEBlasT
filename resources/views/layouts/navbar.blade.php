@@ -8,7 +8,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent"style="margin-left: 3rem;" >
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto fw-bold">
                         <li class="nav-item">
-                        <a class="nav-link active pr-5 " aria-current="page" href="#">Home</a>
+                        <a class="nav-link active pr-5 " aria-current="page" href="{{ route('checkpoint') }}">Home</a>
                         </li>
                     
                         <li class="nav-item dropdown">
@@ -19,7 +19,7 @@
                             <li><a class="dropdown-item " href="#" style="font-size: 1.2em;">Introduction</a></li>
                             <li><a class="dropdown-item" href="#"style="font-size: 1.2em;">Test Your Knowledge</a></li>
                             <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="#"style="font-size: 1.2em;">DashBoard</a></li>
+                            <li><a class="dropdown-item" href="{{ route('dashboard') }}"style="font-size: 1.2em;">DashBoard</a></li>
                             <li><a class="dropdown-item" href="#"style="font-size: 1.2em;">Glossary</a></li>
                         </ul>
                         </li>

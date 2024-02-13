@@ -7,7 +7,7 @@
 <div class="container-fluid dashboard d-flex align-items-center justify-content-center">
     <img class="" src="{{asset('Avatar.png')}} " style="width: 30em;height:auto; margin-top:8em;" alt="Avatar"/>
     <div id="dynamicContent" class="speech-bubble p-4 shadow-lg" style="margin-top:-10em; margin-left:-4em;"></div>
-  
+    <button class="p-2 shadow-lg rounded-lg" style=" margin-left:-4em; background-color:gray;">Explore</button>
 </div>
 
 <!--<script>
