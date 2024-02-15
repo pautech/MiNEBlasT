@@ -7,16 +7,16 @@
 <div class="container-fluid dashboard d-flex align-items-center justify-content-center">
     <img class="" src="{{asset('Avatar.png')}} " style="width: 30em;height:auto; margin-top:8em;" alt="Avatar"/>
     <div id="dynamicContent" class="speech-bubble p-4 shadow-lg" style="margin-top:-10em; margin-left:-4em;"></div>
-    <button class="p-2 shadow-lg rounded-lg" style=" margin-left:-4em; background-color:gray;">Explore</button>
+
 </div>
-<!--
+
 <script>
 document.addEventListener('DOMContentLoaded', function () {
     var jsonData = [
         { "message": "Greetings, Mining Engineers! This is Engineer Lorry" },
         { "introduction": "We are thrilled to welcome you to our digital hub, a space designed to revolutionize the way you engage information and learning!" },
         { "invitation": "Here at MinaDrillBlast, we believe that learning should be more than just a passive experience. It should be an adventure that captivates, challenges, and leaves you inspired!" },
-        { "question": "Are you excited? Now, click the explore button below." }
+        { "question": "Are you excited? Now, Let's Get Started" }
     ];
 
     var currentIndex = 0;
@@ -40,11 +40,16 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // Calculate delay based on text length
         var textLength = Object.values(data)[0].length;
-        var delay = textLength * 30; // Adjust the multiplier as needed
+        var delay = textLength * 10; // Adjust the multiplier as needed
 
         // Set an event listener for the 'end' event
         message.addEventListener('end', function () {
             // Increment index or reset to 0
+            if (currentIndex === jsonData.length - 1) {
+                // Redirect to home route if at the last index
+                window.location.href = '{{ route("home") }}';
+                return;
+            }
             currentIndex = (currentIndex + 1) % jsonData.length;
 
             // Set a delay before updating the content again
@@ -54,7 +59,8 @@ document.addEventListener('DOMContentLoaded', function () {
         speechSynthesis.speak(message);
     }
 });
+
 </script>
--->
+
 
 @endsection
