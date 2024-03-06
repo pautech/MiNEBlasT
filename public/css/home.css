@@ -58,9 +58,21 @@ button{
 .dashboard{
     background-color: #e7d5b9;
     height: 86.6vh;
+   
   
 }
+.courses{
+  background-color: #e7d5b9;
+  height: 86.6vh;
 
+}
+.course-item {
+  transition: transform 0.3s;
+}
+
+.course-item:hover {
+  transform: scale(1.1);
+}
 .speech-bubble {
     position: relative;
     display: inline-block;
@@ -115,4 +127,15 @@ gap: 3rem;
   font-weight: bold;
 }
 
- 
+@media (max-width: 800px) {
+  .courses {
+      flex-direction: column;
+      margin-top: 250px;
+  
+      
+  }
+  .course-item {
+    margin-bottom: 50px;
+    box-shadow: none;
+  }
+}

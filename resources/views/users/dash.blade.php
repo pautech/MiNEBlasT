@@ -9,7 +9,7 @@
     <div id="dynamicContent" class="speech-bubble p-4 shadow-lg" style="margin-top:-10em; margin-left:-4em;"></div>
 
 </div>
-
+<!--
 <script>
 document.addEventListener('DOMContentLoaded', function () {
     var jsonData = [
@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', function () {
             // Increment index or reset to 0
             if (currentIndex === jsonData.length - 1) {
                 // Redirect to home route if at the last index
-                window.location.href = '{{ route("home") }}';
+                window.location.href = '{{ route("courses") }}';
                 return;
             }
             currentIndex = (currentIndex + 1) % jsonData.length;
@@ -62,5 +62,5 @@ document.addEventListener('DOMContentLoaded', function () {
 
 </script>
 
-
+-->
 @endsection

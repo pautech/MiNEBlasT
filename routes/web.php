@@ -37,7 +37,9 @@ Route::get('/dashboard', function () {
     return view('users.dash');
 })->name('dashboard');
 
-
+Route::get('/courses', function () {
+    return view('Tolearn');
+})->name('courses');
 
 
 // ... (existing routes)

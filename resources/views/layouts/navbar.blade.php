@@ -8,7 +8,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent"style="margin-left: 3rem;" >
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto fw-bold">
                         <li class="nav-item">
-                        <a class="nav-link active pr-5 " aria-current="page" href="{{ route('checkpoint') }}">Home</a>
+                        <a class="nav-link active pr-5 " aria-current="page" href="{{ route('home') }}">Home</a>
                         </li>
                     
                         <li class="nav-item dropdown">
