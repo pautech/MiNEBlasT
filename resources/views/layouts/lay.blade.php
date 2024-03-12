@@ -105,7 +105,7 @@
 
   </style>
 </head>
-<body  style="background-color: #e7d5b9;">
+<body style="background-color:#e7d5b9">
 
 
 @yield('content')

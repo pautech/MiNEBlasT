@@ -41,6 +41,9 @@ Route::get('/courses', function () {
     return view('Tolearn');
 })->name('courses');
 
+Route::get('/drill1', function () {
+    return view('Drill1');
+})->name('drill1');
 
 // ... (existing routes)
 
