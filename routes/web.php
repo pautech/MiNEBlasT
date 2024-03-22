@@ -56,7 +56,7 @@ Route::middleware(['auth:web'])->group(function () {
 });
 
 Route::get('/registration', [UserController::class, 'registration'])->name('registration');
-
+Route::post('/registration', [UserController::class, 'store'])->name('registration.store');
 
 // Add the following login routes
 Route::get('/ulogin', [UserController::class, 'showLoginForm'])->name('ulogin');
