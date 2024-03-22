@@ -45,6 +45,10 @@ Route::get('/drill1', function () {
     return view('Drill1');
 })->name('drill1');
 
+Route::get('/quiz', function () {
+    return view('minequiz');
+})->name('minequiz');
+
 // ... (existing routes)
 
 Route::middleware(['auth:web'])->group(function () {
