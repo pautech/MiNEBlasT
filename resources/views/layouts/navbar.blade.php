@@ -17,7 +17,7 @@
                         </a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item " href="{{ route('courses') }}" style="font-size: 1.2em;">Introduction</a></li>
-                            <li><a class="dropdown-item" href="#"style="font-size: 1.2em;">Test Your Knowledge</a></li>
+                            <li><a class="dropdown-item" href="{{ route('minequiz') }}"style="font-size: 1.2em;">Test Your Knowledge</a></li>
                             <li><hr class="dropdown-divider"></li>
                             <li><a class="dropdown-item" href="{{ route('dashboard') }}"style="font-size: 1.2em;">DashBoard</a></li>
                             <li><a class="dropdown-item" href="#"style="font-size: 1.2em;">Glossary</a></li>
