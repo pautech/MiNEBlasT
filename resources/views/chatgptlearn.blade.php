@@ -9,9 +9,9 @@
 
   <!-- Header -->
   <div class="top">
-    <img src="https://assets.edlin.app/images/rossedlin/03/rossedlin-03-100.jpg" alt="Avatar">
+    <img src="{{ asset('img/LOI.jpg') }}"style="width: 40px;" alt="Avatar">
     <div>
-      <p>Ross Edlin</p>
+      <p>Engineer LOI</p>
       <small>Online</small>
     </div>
   </div>
@@ -20,7 +20,7 @@
   <!-- Chat -->
   <div class="messages">
     <div class="left message">
-      <img src="https://assets.edlin.app/images/rossedlin/03/rossedlin-03-100.jpg" alt="Avatar">
+      <img src="{{ asset('img/LOI.jpg') }}" style="width: 40px;"alt="Avatar">
       <p>Start chatting with Chat GPT AI below!!</p>
     </div>
   </div>
