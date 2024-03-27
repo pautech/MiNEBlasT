@@ -49,6 +49,10 @@ Route::get('/quiz', function () {
     return view('minequiz');
 })->name('minequiz');
 
+Route::get('/chatlearn', function () {
+    return view('chatgptlearn');
+})->name('chatgptlearn');
+
 // ... (existing routes)
 
 Route::middleware(['auth:web'])->group(function () {
@@ -65,3 +69,6 @@ Route::post('/registration', [UserController::class, 'store'])->name('registrati
 // Add the following login routes
 Route::get('/ulogin', [UserController::class, 'showLoginForm'])->name('ulogin');
 Route::post('/ulogin', [UserController::class, 'ulogin']);
+
+
+Route::post('/chat', 'App\Http\Controllers\ChatController');
