@@ -41,9 +41,9 @@ Route::get('/courses', function () {
     return view('Tolearn');
 })->name('courses');
 
-Route::get('/drill1', function () {
-    return view('Drill1');
-})->name('drill1');
+Route::get('/drill', function () {
+    return view('stagespage.Drill');
+})->name('drill');
 
 Route::get('/quiz', function () {
     return view('minequiz');
