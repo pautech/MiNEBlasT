@@ -12,12 +12,12 @@
             
                      <div class="carousel-item active container-fluid courses d-flex align-items-center justify-content-center">
                             <div class="course-item h-50 w-25 mr-5 border-0 shadow-lg rounded d-flex flex-column align-items-center">
-                            <a href=""> <img class="" src="{{ asset('img/drilling.png') }}" style="width: 250px;" alt="drilling logo"></a>
-                                <h3>Survey</h3>
+                            <a href=""> <img class="mt-5 pt-2" src="{{ asset('img/survey.gif') }}" style="width: 200px;" alt="surveying Logo"></a>
+                                <h3 class="mt-3 pt-2">Survey</h3>
                             </div>
                             <div class="course-item h-50 w-25 mr-5 border-0 shadow-lg rounded d-flex flex-column align-items-center">
-                                <a href=""><img class="mt-4 pt-5" src="{{ asset('img/blasting.jpg') }}" style="width: 250px;" alt="drilling logo"></a>
-                                <h3 class="mt-4 pt-3">Drilling</h3>
+                                <a href=""><img class="mt-1 pt-1" src="{{ asset('img/drill 1.gif') }}" style="width: 250px;" alt="drilling logo"></a>
+                                <h3 class="mt-1 pt-1">Drilling</h3>
                             </div>
                             <div class="course-item h-50 w-25 border-0 shadow-lg rounded d-flex flex-column align-items-center">
                                 <a href=""><img src="{{ asset('img/ventilation.png') }}" style="width: 245px;" alt="drilling logo"></a>

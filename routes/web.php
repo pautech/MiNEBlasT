@@ -41,16 +41,16 @@ Route::get('/courses', function () {
     return view('Tolearn');
 })->name('courses');
 
-Route::get('/drill', function () {
-    return view('stagespage.Drill');
-})->name('drill');
+Route::get('/survey', function () {
+    return view('stagespage.survey');
+})->name('survey');
 
 Route::get('/quiz', function () {
     return view('minequiz');
 })->name('minequiz');
 
 Route::get('/chatlearn', function () {
-    return view('chatgptlearn');
+    return view('chatgptlearn');    
 })->name('chatgptlearn');
 
 // ... (existing routes)
