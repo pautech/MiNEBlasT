@@ -41,13 +41,17 @@ Route::get('/courses', function () {
     return view('Tolearn');
 })->name('courses');
 
-Route::get('/drill1', function () {
-    return view('Drill1');
-})->name('drill1');
+Route::get('/drill', function () {
+    return view('stagespage.Drill');
+})->name('drill');
 
 Route::get('/quiz', function () {
     return view('minequiz');
 })->name('minequiz');
+
+Route::get('/chatlearn', function () {
+    return view('chatgptlearn');
+})->name('chatgptlearn');
 
 // ... (existing routes)
 
@@ -65,3 +69,6 @@ Route::post('/registration', [UserController::class, 'store'])->name('registrati
 // Add the following login routes
 Route::get('/ulogin', [UserController::class, 'showLoginForm'])->name('ulogin');
 Route::post('/ulogin', [UserController::class, 'ulogin']);
+
+
+Route::post('/chat', 'App\Http\Controllers\ChatController');
