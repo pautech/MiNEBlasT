@@ -9,7 +9,7 @@
     <div id="dynamicContent" class="speech-bubble p-4 shadow-lg" style="margin-top:-10em; margin-left:-4em;"></div>
 
 </div>
-<!--
+
 <script>
 document.addEventListener('DOMContentLoaded', function () {
     var jsonData = [
@@ -62,5 +62,4 @@ document.addEventListener('DOMContentLoaded', function () {
 
 </script>
 
--->
 @endsection
