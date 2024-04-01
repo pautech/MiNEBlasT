@@ -14,6 +14,7 @@
             <p class="shadow-lg p-3 rounded-lg"><span class="bold-text">Our Goal:</span> At MineXplorer, our goal is simple yet profound: to provide the necessary information in a fun and engaging way of learning. We believe that understanding the complexities of drilling and blasting in underground mining should be accessible, enjoyable, and ultimately contribute to the continuous growth and improvement of the mining industry.
              </p>
        </div>
+  
     </div>
 
 @endsection

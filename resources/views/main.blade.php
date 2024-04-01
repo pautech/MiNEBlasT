@@ -10,7 +10,7 @@
     <div id="dynamicContent1" class="speech-bubble1"></div>
  
 
-<!--
+
 <script>
             document.addEventListener('DOMContentLoaded', function () {
                 var jsonData = [
@@ -56,5 +56,5 @@
                 }
             });
 </script>
-        -->
+        
 @endsection

@@ -72,7 +72,7 @@
 
       //Populate receiving message
       $(".messages > .message").last().after('<div class="left message">' +
-        '<img src="https://assets.edlin.app/images/rossedlin/03/rossedlin-03-100.jpg" alt="Avatar">' +
+        '<img src="{{ asset('img/LOI.jpg') }}" alt="Avatar">' +
         '<p>' + res + '</p>' +
         '</div>');
 
