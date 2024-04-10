@@ -1,3 +1,10 @@
+*{
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+
+}
+
 body{
 
     background-color: #e7d5b9;
@@ -180,3 +187,29 @@ gap: 3rem;
   height:40em;
 }
 
+.drill-main{
+
+  height: fit-content;
+
+
+ 
+}
+.drill1-content{
+  font-size: 1.8rem;
+  text-align: justify;
+  font-family:monaco;
+}
+.h1-drill1-title{
+  font-family:Lucida Console;
+}
+.drill2-content{
+  font-size: 1.8rem;
+  text-align: justify;
+  font-family:monaco;
+}
+.h1-drill2-title{
+  font-family:Lucida Console;
+}
+.drilling-systems{
+  font-size: 1.3rem;
+}

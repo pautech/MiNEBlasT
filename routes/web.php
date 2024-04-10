@@ -45,6 +45,13 @@ Route::get('/survey', function () {
     return view('stagespage.survey');
 })->name('survey');
 
+Route::get('/drilling', function () {
+    return view('stagespage.drill');
+})->name('drill');
+Route::get('/drilling1', function () {
+    return view('stagespage.drill1');
+})->name('drill1');
+
 Route::get('/quiz', function () {
     return view('minequiz');
 })->name('minequiz');
