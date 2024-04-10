@@ -18,8 +18,8 @@
             <img src="{{ asset('img/drillpic1.png') }}" alt="drill picture" style="height:20rem; width:33rem;">
             </div>
         </div>
-      <div class=" mt-3 btn d-flex justify-content-end">
-      <button type="button" class="rock-btn shadow-lg pl-5 pr-5">Next</button>    
+      <div class=" mt-3 btn d-flex justify-content-end  outline-none  border-0">
+      <a class="text-decoration-none text-dark " href="{{ route('drill1') }}"><button type="button" class="rock-btn shadow-lg pl-5 pr-5 outline-none">Next</button></a>    
       </div>
 </div>
    </div>
