@@ -6,27 +6,33 @@
     @include('layouts.navbar')
 
 
-    <div class="container">
-   <h1 class="pt-3 mt-5 h1-drill1-title">Fields of Application for the Different Drilling Methods</h1>
-   <div class="container drill-main d-flex justify-content-center mt-5">
-      <div class="row">
-         <div class="col drill3 ">
-            <h3>The two most used mechanical drilling methods are;</h3>
-            <br>
-            <a class="text-decoration-none text-dark " href="#"><h5 class="pop-up">Rotary-percussive methods</h5></a>
-            <p class="text-justify">- These are commonly employed in various rock types, utilizing top hammer and down-the-hole hammer techniques.</p>
-            <a class="text-decoration-none text-dark " href="#"><h5 class="pop-up1">Rotary methods</h5></a>
-            <p class="text-justify">- These are categorized based on the penetration mechanism: crushing with tricones for medium to hard rocks and cutting with drag bits for</p>
-         </div>
+   <div class="container">
+   <div class="container drill-main d-flex  justify-content-center mt-5">
+        <div class="row ">
+            <div class="col">
+            <h3>Shank Adaptors</h3>
+            <p>- These components are affixed to the rock drill chuck to transmit impact energy to the rods, rotation torque, and feed force effectively. </p>
+            <p>- Two types of shank adaptors: <a class="text-dark fw-bold pop-up" href="#">Leyner Shank</a> and <a class="text-dark fw-bold pop-up1"href="#">Spilned Shank</a></p>
+            <h3>Drill Steel </h3>
+            <p>- The sections extending from the drill chuck typically consist of rods, bars, and pipes.</p>
+            <h3>Couplings</h3>
+            <p>- Couplings are used to link extension rods together until the desired length is achieved, ensuring proper alignment for effective energy transmission.</p>
+          </div>
+     </div>
+      <div class=" mb-3 mt-5 btn d-flex justify-content-end outline-none  border-0">
+        <a class="text-decoration-none text-dark " href="{{ route('drill7') }}"><button type="button" class="rock-btn shadow-lg pl-5 pr-5">Back</button> </a>
+        <a class="text-decoration-none text-dark " href="{{ route('drill8') }}"><button type="button" class="rock-btn shadow-lg pl-5 pr-5 ml-3">Next</button> </a>
+      
+        
       </div>
-      <div class="mt-3 btn d-flex justify-content-end outline-none border-0">
-         <a class="text-decoration-none text-dark " href="{{ route('drill3') }}"><button type="button" class="rock-btn shadow-lg pl-5 pr-5">Back</button></a>
-         <a class="text-decoration-none text-dark " href="{{ route('drill5') }}"><button type="button" class="rock-btn shadow-lg pl-5 pr-5 ml-3">Next</button></a>
-      </div>
-   </div>
 </div>
+   </div>
+  
 
-<!-- Modal -->
+
+
+
+   <!-- Modal1 -->
 
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
    <div class="modal-dialog">
@@ -39,7 +45,7 @@
          </div>
          <div class="modal-body" style="max-height: 400px; overflow-y: auto;">
                 <img src="{{ asset('img/rotary.png') }}"alt="">
-                <p>Figure 1: Drilling methods for surface operations (Atlas Copco).</p>
+                
         </div>
 
          <div class="modal-footer">
@@ -49,7 +55,7 @@
       </div>
    </div>
 </div>
-
+<!-- Modal2 -->
 <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
    <div class="modal-dialog">
       <div class="modal-content">
@@ -61,8 +67,7 @@
          </div>
          <div class="modal-body" style="max-height: 400px; overflow-y: auto;">
                 <img src="{{ asset('img/rotary1.png') }}"alt="">
-                <p>Figure 2: Drilling methods for surface operations (Atlas Copco).</p>
-        </div>
+                
 
          <div class="modal-footer">
             <button type="button" class="btn btn-secondary close1" data-dismiss="modal">Close</button>

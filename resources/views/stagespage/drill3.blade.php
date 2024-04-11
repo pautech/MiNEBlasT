@@ -12,9 +12,9 @@
       <div class="row">
          <div class="col drill3 ">
             <h3>Manual Drilling</h3>
-            <p>- Involves the use of lightweight equipment handheld by drillers, typically in small-scale operations where the size constraints or cost considerations make the use of other machinery impractical.</p>
+            <p class="text-justify">- Involves the use of lightweight equipment handheld by drillers, typically in small-scale operations where the size constraints or cost considerations make the use of other machinery impractical.</p>
             <a class="text-decoration-none text-dark " href="#"><h3 class="pop-up" data-toggle="modal" data-target="#exampleModal">Mechanized Drilling</h3></a>
-            <p>- Utilizes equipment mounted on rigs, allowing operators to manage all drilling parameters conveniently from a comfortable position.</p>
+            <p class="text-justify">- Utilizes equipment mounted on rigs, allowing operators to manage all drilling parameters conveniently from a comfortable position.</p>
          </div>
       </div>
       <div class="mt-3 btn d-flex justify-content-end outline-none border-0">
@@ -38,17 +38,17 @@
          <div class="modal-body" style="max-height: 400px; overflow-y: auto;">
                 <p class="text-justify">Types of work in surface as well as in underground mining operations, are classified in the following groups:</p>
                 <p class="font-weight-bold">Bench blasting </p>
-                <p>– best method for rock blasting due to the presence of a free face for material projection and systematic work organization.</p>
+                <p class="text-justify">– best method for rock blasting due to the presence of a free face for material projection and systematic work organization.</p>
                 <p class="font-weight-bold">Drilling for drifting and tunneling</p>
                 <p>- Involves opening an initial cavity for directing fragmented rock from charges. Shift towards mechanization with jumbos replacing handheld drills for blasthole drilling.</p>
                 <p class="font-weight-bold">Production drilling </p>
-                <p>- Essential in mining, especially underground, for ore extraction. Methods vary based on exploitation systems, characterized by limited space for blasthole drilling in drifts.</p>
+                <p class="text-justify">- Essential in mining, especially underground, for ore extraction. Methods vary based on exploitation systems, characterized by limited space for blasthole drilling in drifts.</p>
                 <p class="font-weight-bold">Drilling for raises </p>
-                <p>– Necessary in underground and civil engineering for opening raises. Long blasthole and special drilling systems, including Raise Boring, are utilized for blasting.</p>
+                <p class="text-justify">– Necessary in underground and civil engineering for opening raises. Long blasthole and special drilling systems, including Raise Boring, are utilized for blasting.</p>
                 <p class="font-weight-bold">Drilling rocks with overburden </p>
-                <p>– Special drilling methods with casing are employed for drilling rock masses covered by unconsolidated materials, including underwater operations.</p>
+                <p class="text-justify">– Special drilling methods with casing are employed for drilling rock masses covered by unconsolidated materials, including underwater operations.</p>
                 <p class="font-weight-bold">Rock supports</p>
-                <p>– Vital for rock reinforcement in underground and surface operations, involving bolting or cementing cables where drilling initiates the process.</p>
+                <p class="text-justify">– Vital for rock reinforcement in underground and surface operations, involving bolting or cementing cables where drilling initiates the process.</p>
         </div>
 
          <div class="modal-footer">

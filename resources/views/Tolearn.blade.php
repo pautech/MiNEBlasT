@@ -16,7 +16,7 @@
                                 <h3 class="mt-3 pt-2">Survey</h3>
                             </div>
                             <div class="course-item h-50 w-25 mr-5 border-0 shadow-lg rounded d-flex flex-column align-items-center">
-                                <a href=""><img class="mt-4 rounded" src="{{ asset('img/drill 1.gif') }}" style="width: 200px;" alt="drilling logo"></a>
+                                <a href="{{ route('drill') }}"><img class="mt-4 rounded" src="{{ asset('img/drill 1.gif') }}" style="width: 200px;" alt="drilling logo"></a>
                                 <a class="text-decoration-none text-dark" href="{{ route('drill') }}"><h3 class="mt-1 pt-1">Drilling</h3></a>
                             </div>
                             <div class="course-item h-50 w-25 border-0 shadow   -lg rounded d-flex flex-column align-items-center">

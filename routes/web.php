@@ -62,7 +62,19 @@ Route::get('/drilling3', function () {
 Route::get('/drilling4', function () {
     return view('stagespage.drill4');
 })->name('drill4');
+Route::get('/drilling5', function () {
+    return view('stagespage.drill5');
+})->name('drill5');
 
+Route::get('/drilling6', function () {
+    return view('stagespage.drill6');
+})->name('drill6');
+Route::get('/drilling7', function () {
+    return view('stagespage.drill7');
+})->name('drill7');
+Route::get('/drilling8', function () {
+    return view('stagespage.drill8');
+})->name('drill8');
 Route::get('/quiz', function () {
     return view('minequiz');
 })->name('minequiz');
