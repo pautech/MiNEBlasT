@@ -75,6 +75,15 @@ Route::get('/drilling7', function () {
 Route::get('/drilling8', function () {
     return view('stagespage.drill8');
 })->name('drill8');
+Route::get('/drilling9', function () {
+    return view('stagespage.drill9');
+})->name('drill9');
+Route::get('/drilling10', function () {
+    return view('stagespage.drill10');
+})->name('drill10');
+Route::get('/drilling11', function () {
+    return view('stagespage.drill11');
+})->name('drill11');
 Route::get('/quiz', function () {
     return view('minequiz');
 })->name('minequiz');
@@ -131,5 +140,5 @@ Route::post('/registration', [UserController::class, 'store'])->name('registrati
 // Add the following login routes
 Route::get('/ulogin', [UserController::class, 'showLoginForm'])->name('ulogin');
 Route::post('/ulogin', [UserController::class, 'ulogin']);
-
+Route::get('/drilling11', [UserController::class, 'quizBanner'])->name('drill11');
 Route::post('/chat', 'App\Http\Controllers\ChatController');

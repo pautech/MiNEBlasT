@@ -81,4 +81,16 @@ class UserController extends Controller
         return redirect('/')->with('success', 'You have been logged out successfully.');
     }
 
+    public function quizBanner()
+{
+    // Get the authenticated user
+    $user = Auth::user();
+
+    // Pass the user's first name to the view
+    return view('stagespage.drill11', ['userName' => $user->firstname]);
+}
+
+    
+
+
 }

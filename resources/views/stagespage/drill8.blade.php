@@ -21,7 +21,7 @@
      </div>
       <div class=" mb-3 mt-5 btn d-flex justify-content-end outline-none  border-0">
         <a class="text-decoration-none text-dark " href="{{ route('drill7') }}"><button type="button" class="rock-btn shadow-lg pl-5 pr-5">Back</button> </a>
-        <a class="text-decoration-none text-dark " href="{{ route('drill8') }}"><button type="button" class="rock-btn shadow-lg pl-5 pr-5 ml-3">Next</button> </a>
+        <a class="text-decoration-none text-dark " href="{{ route('drill9') }}"><button type="button" class="rock-btn shadow-lg pl-5 pr-5 ml-3">Next</button> </a>
       
         
       </div>
@@ -44,7 +44,7 @@
             </button>
          </div>
          <div class="modal-body" style="max-height: 400px; overflow-y: auto;">
-                <img src="{{ asset('img/rotary.png') }}"alt="">
+                <img src="{{ asset('img/leyner.png') }}"alt="">
                 
         </div>
 
@@ -66,7 +66,7 @@
             </button>
          </div>
          <div class="modal-body" style="max-height: 400px; overflow-y: auto;">
-                <img src="{{ asset('img/rotary1.png') }}"alt="">
+                <img src="{{ asset('img/spilned.png') }}"alt="">
                 
 
          <div class="modal-footer">
