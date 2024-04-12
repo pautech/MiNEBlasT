@@ -12,7 +12,7 @@
             <div class="col">
             <h1>Advance Systems</h1>
             <p>To ensure optimal performance from the drills, maintaining proper contact between the bits and the rock is crucial, especially when the piston transmits energy through impact. In manual drilling, small equipment requires a drill bit oscillating between 3 and 5 kN, while large drills need more than 15 kN for effective operation.</p>
-            <p>- Two types of shank adaptors: <a class="text-dark fw-bold pop-up" href="#">Leyner Shank</a> and <a class="text-dark fw-bold pop-up1"href="#">Spilned Shank</a></p>
+          
             <a class="text-dark fw-bold pop-up"href="#"><h3>Airlegs  </h3></a>
             
             <p>- An airleg comprises two tubes, an outer lightweight metal tube, and an inner steel tube connected to the jackhammer. The inner tube, acting as a piston with a valve, is linked to compressed air.</p>

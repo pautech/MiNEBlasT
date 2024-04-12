@@ -16,10 +16,10 @@
     </div>
 
 </div>
-<div class=" mb-3 btn d-flex justify-content-end outline-none  border-0">
+<div class=" mb-3 mr-5 btn d-flex justify-content-end outline-none  border-0">
     <a class="text-decoration-none text-dark " href="{{ route('drill11') }}"><button type="button"
             class="rock-btn shadow-lg pl-5 pr-5">Back</button> </a>
-    <a class="text-decoration-none text-dark " href="{{ route('drill12') }}"><button type="button"
+    <a class="text-decoration-none text-dark " href="{{ route('drill13') }}"><button type="button"
             class="rock-btn shadow-lg pl-5 pr-5 ml-3">Next</button> </a>
 
 
@@ -210,21 +210,21 @@ function shuffleArray(array) {
         }
        
          // Add a reference to the modal
-         const submitModal = document.getElementById("submitModal2");
+        // const submitModal = document.getElementById("submitModal2");
 
         // Show the modal when the document is ready
-        $(document).ready(function() {
-            $('#submitModal').modal('show'); // Show the modal using jQuery
-        });
+       // $(document).ready(function() {
+        //    $('#submitModal').modal('show'); // Show the modal using jQuery
+        //});
 
-        $('.closemodal').on('click', function() {
-            window.speechSynthesis.cancel(); // Stop text-to-speech
-            $('#submitModal').modal('hide');
-        });
-        $('.closemodal1').on('click', function() {
-            window.speechSynthesis.cancel(); // Stop text-to-speech
-            $('#submitModal').modal('hide');
-        });
+       // $('.closemodal').on('click', function() {
+         //   window.speechSynthesis.cancel(); // Stop text-to-speech
+         //   $('#submitModal').modal('hide');
+       // });
+       // $('.closemodal1').on('click', function() {
+         //   window.speechSynthesis.cancel(); // Stop text-to-speech
+         //   $('#submitModal').modal('hide');
+       // });
         submitButton.style.display = "none";
         nextButton.style.display = "inline-block";
        

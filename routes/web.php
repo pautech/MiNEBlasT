@@ -87,6 +87,9 @@ Route::get('/drilling11', function () {
 Route::get('/drilling12', function () {
     return view('stagespage.drill12');
 })->name('drill12');
+Route::get('/drilling13', function () {
+    return view('stagespage.drill13');
+})->name('drill13');
 Route::get('/quiz', function () {
     return view('minequiz');
 })->name('minequiz');
