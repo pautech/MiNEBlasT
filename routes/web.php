@@ -90,6 +90,18 @@ Route::get('/drilling12', function () {
 Route::get('/drilling13', function () {
     return view('stagespage.drill13');
 })->name('drill13');
+Route::get('/drilling14', function () {
+    return view('stagespage.drill14');
+})->name('drill14');
+Route::get('/drilling15', function () {
+    return view('stagespage.drill15');
+})->name('drill15');
+Route::get('/drilling16', function () {
+    return view('stagespage.drill16');
+})->name('drill16');
+Route::get('/drilling17', function () {
+    return view('stagespage.drill17');
+})->name('drill17');
 Route::get('/quiz', function () {
     return view('minequiz');
 })->name('minequiz');
