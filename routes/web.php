@@ -102,6 +102,9 @@ Route::get('/drilling16', function () {
 Route::get('/drilling17', function () {
     return view('stagespage.drill17');
 })->name('drill17');
+Route::get('/drilling18', function () {
+    return view('stagespage.drill18');
+})->name('drill18');
 Route::get('/quiz', function () {
     return view('minequiz');
 })->name('minequiz');
