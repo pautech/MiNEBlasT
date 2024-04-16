@@ -105,6 +105,21 @@ Route::get('/drilling17', function () {
 Route::get('/drilling18', function () {
     return view('stagespage.drill18');
 })->name('drill18');
+Route::get('/drilling19', function () {
+    return view('stagespage.drill19');
+})->name('drill19');
+Route::get('/drilling20', function () {
+    return view('stagespage.drill20');
+})->name('drill20');
+Route::get('/drilling21', function () {
+    return view('stagespage.drill21');
+})->name('drill21');
+Route::get('/drilling22', function () {
+    return view('stagespage.drill22');
+})->name('drill22');
+Route::get('/drilling23', function () {
+    return view('stagespage.drill23');
+})->name('drill23');
 Route::get('/quiz', function () {
     return view('minequiz');
 })->name('minequiz');

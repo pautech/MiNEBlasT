@@ -222,3 +222,32 @@ gap: 3rem;
   font-size: 1.2rem;
 }
 
+
+.popup {
+  position: absolute;
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1; /* Ensure popups are above other content */
+  display: none; /* Hide popups by default */
+}
+
+.popup.active {
+  display: block; /* Show popup when active class is added */
+}
+
+#popup {
+/* Adjust this value as needed */
+  left: 0;
+}
+
+#popup1 {
+  top: -50px; /* Adjust this value as needed */
+  left: 0;
+}
+
+#hover-heading:hover + #popup,
+#hover-heading1:hover + #popup1 {
+  display: block; /* Show popup when heading is hovered */
+}
