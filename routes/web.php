@@ -14,6 +14,7 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+// Redirect unauthenticated users to the checkpoint page
 
 Route::get('/', function () {
     return view('main');
@@ -120,6 +121,11 @@ Route::get('/drilling22', function () {
 Route::get('/drilling23', function () {
     return view('stagespage.drill23');
 })->name('drill23');
+//blasting Pages
+Route::get('/blast', function () {
+    return view('drillpages.blast');
+})->name('blast');
+
 Route::get('/quiz', function () {
     return view('minequiz');
 })->name('minequiz');
@@ -128,10 +134,14 @@ Route::get('/chatlearn', function () {
     return view('chatgptlearn');    
 })->name('chatgptlearn');
 
+
+
 // ... (existing routes)
 
 // Redirect unauthenticated users to the menu page
-
+Route::fallback(function () {
+    return redirect('/checkpoint');
+});
 Route::middleware(['auth:web'])->group(function () {
     // Define all your routes here
     Route::get('/about', function () {
@@ -165,10 +175,7 @@ Route::middleware(['auth:web'])->group(function () {
     Route::match(['get', 'post'], '/ulogout', [UserController::class, 'ulogout'])->name('ulogout');
 });
 
-// Redirect unauthenticated users to the checkpoint page
-Route::fallback(function () {
-    return redirect('/checkpoint');
-});
+
 
 Route::get('/registration', [UserController::class, 'registration'])->name('registration');
 Route::post('/registration', [UserController::class, 'store'])->name('registration.store');
