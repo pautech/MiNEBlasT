@@ -125,6 +125,20 @@ Route::get('/drilling23', function () {
 Route::get('/blast', function () {
     return view('drillpages.blast');
 })->name('blast');
+Route::get('/blast1', function () {
+    return view('drillpages.blast1');
+})->name('blast1');
+Route::get('/blast2', function () {
+    return view('drillpages.blast2');
+})->name('blast2');
+
+Route::get('/blast3', function () {
+    return view('drillpages.blast3');
+})->name('blast3');
+
+Route::get('/blast4', function () {
+    return view('drillpages.blast4');
+})->name('blast4');
 
 Route::get('/quiz', function () {
     return view('minequiz');
