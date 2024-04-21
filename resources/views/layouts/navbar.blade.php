@@ -21,7 +21,7 @@
                             <li><a class="dropdown-item" href="{{ route('chatgptlearn') }}"style="font-size: 1.2em;">Chat Learn</a></li>
                             <li><hr class="dropdown-divider"></li>
                             <li><a class="dropdown-item" href="{{ route('minequiz') }}"style="font-size: 1.2em;">Test Your Knowledge</a></li>
-                            <li><a class="dropdown-item" href="#"style="font-size: 1.2em;">Glossary</a></li>
+                            <li><a class="dropdown-item" href="{{ route('glossary') }}"style="font-size: 1.2em;">Glossary</a></li>
                         </ul>
                         </li>
                         <li class="nav-item"><a class="nav-link pr-5" href="{{ route('about') }}">About</a> </li>

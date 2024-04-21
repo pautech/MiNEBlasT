@@ -24,6 +24,10 @@ Route::get('/about', function () {
     return view('about');
 })->name('about');
 
+Route::get('/glossary', function () {
+    return view('glossary');
+})->name('glossary');
+
 Route::get('/references', function () {
     return view('references');
 });
