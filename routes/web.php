@@ -161,6 +161,26 @@ Route::get('/blast10', function () {
     return view('drillpages.blast10');
 })->name('blast10');
 
+Route::get('/blast11', function () {
+    return view('drillpages.blast11');
+})->name('blast11');
+
+Route::get('/blast12', function () {
+    return view('drillpages.blast12');
+})->name('blast12');
+
+Route::get('/blast13', function () {
+    return view('drillpages.blast13');
+})->name('blast13');
+
+Route::get('/blast14', function () {
+    return view('drillpages.blast14');
+})->name('blast14');
+
+Route::get('/blast15', function () {
+    return view('drillpages.blast15');
+})->name('blast15');
+
 Route::get('/quiz', function () {
     return view('minequiz');
 })->name('minequiz');
