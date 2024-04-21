@@ -143,6 +143,12 @@ Route::get('/blast4', function () {
 Route::get('/blast5', function () {
     return view('drillpages.blast5');
 })->name('blast5');
+Route::get('/blast6', function () {
+    return view('drillpages.blast6');
+})->name('blast6');
+Route::get('/blast7', function () {
+    return view('drillpages.blast7');
+})->name('blast7');
 
 Route::get('/quiz', function () {
     return view('minequiz');
