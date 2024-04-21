@@ -140,6 +140,10 @@ Route::get('/blast4', function () {
     return view('drillpages.blast4');
 })->name('blast4');
 
+Route::get('/blast5', function () {
+    return view('drillpages.blast5');
+})->name('blast5');
+
 Route::get('/quiz', function () {
     return view('minequiz');
 })->name('minequiz');

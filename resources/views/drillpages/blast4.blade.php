@@ -18,16 +18,19 @@
             </div>   
             <div class="col">   
               
-                <a class="text-decoration-none text-dark " > <img class="mt-5" src="{{ asset('img/plasting.png') }}" alt="drill picture" style="height:10rem; width:30rem;"></a>
+                <a class="text-decoration-none text-dark" > <img class="shadow-lg mt-5" src="{{ asset('img/plasting.png') }}" alt="drill picture" style="height:10rem; width:30rem;"></a>
                 
             </div>
        
    
       </div>
+      <div class=" d-flex justify-content-center" >
+      <img class=" shadow-lg mt-5" src="{{ asset('img/pop.png') }}" alt="drill picture" style="height:10rem; width:50rem;">
+      </div>
 
       <div class=" mt-5 btn d-flex justify-content-end  outline-none  border-0">
-         <a class="text-decoration-none text-dark " href="{{ route('blast3') }}"><button type="button" class="rock-btn shadow-lg pl-5 pr-5 ml-3">Next</button></a>
-         <a class="text-decoration-none text-dark " href="{{ route('blast4') }}"><button type="button" class="rock-btn shadow-lg pl-5 pr-5 ml-3">Next</button></a>
+         <a class="text-decoration-none text-dark " href="{{ route('blast3') }}"><button type="button" class="rock-btn shadow-lg pl-5 pr-5 ml-3">Back</button></a>
+         <a class="text-decoration-none text-dark " href="{{ route('blast5') }}"><button type="button" class="rock-btn shadow-lg pl-5 pr-5 ml-3">Next</button></a>
         </div>
 </div>
    </div>
