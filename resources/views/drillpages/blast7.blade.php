@@ -13,10 +13,10 @@
                                                 <ul>
                                                       <li> <a href="#"><span>Underground Mining:Unsupported Methods</span></a>
                                                       <ul>	
-                                                            <li><a href="#" class="pop-up"><span>Room-and-Pillar Mining</span></a></li>
-                                                            <li> <a href="#" class="pop-up-2"><span>Stope-and-Pillar Mining</span></a></li>
-                                                            <li><a href="#"class="pop-up-3"><span>Shrinkage Stoping</span></a></li>
-                                                            <li><a href="#"class="pop-up-4"><span>Sublevel Stoping</span></a></li>
+                                                            <li><a href="#" class="pop-up"><span class="fw-bold">Room-and-Pillar Mining</span></a></li>
+                                                            <li> <a href="#" class="pop-up-2"><span class="fw-bold">Stope-and-Pillar Mining</span></a></li>
+                                                            <li><a href="#"class="pop-up-3"><span class="fw-bold">Shrinkage Stoping</span></a></li>
+                                                            <li><a href="#"class="pop-up-4"><span >Sublevel Stoping</span></a></li>
                                                       </ul>
                                                 </ul>
                                           </div>
@@ -29,7 +29,7 @@
    
    </div>
    <div class=" mt-5 btn d-flex justify-content-end  outline-none  border-0">
-                              <a class="text-decoration-none text-dark " href="{{ route('blast7') }}"><button type="button" class="rock-btn shadow-lg pl-5 pr-5 ml-3">Back</button></a>
+                              <a class="text-decoration-none text-dark " href="{{ route('blast6') }}"><button type="button" class="rock-btn shadow-lg pl-5 pr-5 ml-3">Back</button></a>
                               <a class="text-decoration-none text-dark " href="{{ route('blast8') }}"><button type="button" class="rock-btn shadow-lg pl-5 pr-5 ml-3">Next</button></a>
       </div>
 

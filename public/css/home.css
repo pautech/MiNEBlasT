@@ -349,3 +349,11 @@ gap: 3rem;
 .tree li a:hover+ul li::after, .tree li a:hover+ul li::before, .tree li a:hover+ul::before, .tree li a:hover+ul ul::before {
 	border-color: #94a0b4;
 }
+
+table {
+  border-collapse: separate;
+  border-spacing: 10px;
+}
+
+
+
