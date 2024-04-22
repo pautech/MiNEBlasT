@@ -111,7 +111,9 @@ button{
       transform: translateY(-10px);
     }
   }
- 
+ .main-p1 p{
+  text-align: justify;
+ }
 
   
   .about-con {
