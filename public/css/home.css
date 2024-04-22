@@ -150,8 +150,15 @@ gap: 3rem;
   .course-item {
     margin-bottom: 50px;
     box-shadow: none;
+    
+
   }
+  .course-item h3{
+    font-size: 1em;
+  }
+  
 }
+
 
 
 .question {

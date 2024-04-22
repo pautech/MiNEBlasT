@@ -24,6 +24,8 @@ Route::get('/about', function () {
     return view('about');
 })->name('about');
 
+
+
 Route::get('/glossary', function () {
     return view('glossary');
 })->name('glossary');
@@ -192,6 +194,37 @@ Route::get('/quiz', function () {
 Route::get('/chatlearn', function () {
     return view('chatgptlearn');    
 })->name('chatgptlearn');
+
+
+
+/*cycle operation Pages */
+
+Route::get('/cycleope', function () {
+    return view('cycleopepages.cycleope');
+})->name('cycleope');
+
+Route::get('/cycleope1', function () {
+    return view('cycleopepages.cycleope1');
+})->name('cycleope1');
+
+Route::get('/cycleope2', function () {
+    return view('cycleopepages.cycleope2');
+})->name('cycleope2');
+
+Route::get('/cycleope3', function () {
+    return view('cycleopepages.cycleope3');
+})->name('cycleope3');
+
+Route::get('/cycleope4', function () {
+    return view('cycleopepages.cycleope4');
+})->name('cycleope4');
+
+Route::get('/cycleope5', function () {
+    return view('cycleopepages.cycleope5');
+})->name('cycleope5');
+Route::get('/cycleope6', function () {
+    return view('cycleopepages.cycleope6');
+})->name('cycleope6');
 
 
 
