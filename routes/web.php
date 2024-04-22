@@ -227,6 +227,15 @@ Route::get('/cycleope6', function () {
 })->name('cycleope6');
 
 
+Route::get('/cycleope7', function () {
+    return view('cycleopepages.cycleope7');
+})->name('cycleope7');
+
+
+
+
+
+
 
 // ... (existing routes)
 
@@ -239,7 +248,7 @@ Route::middleware(['auth:web'])->group(function () {
     Route::get('/about', function () {
         return view('about');
     })->name('about');
-
+    
     Route::get('/references', function () {
         return view('references');
     });
@@ -263,6 +272,179 @@ Route::middleware(['auth:web'])->group(function () {
     Route::get('/chatlearn', function () {
         return view('chatgptlearn');    
     })->name('chatgptlearn');
+
+
+
+    Route::get('/drilling', function () {
+        return view('stagespage.drill');
+    })->name('drill');
+    Route::get('/drilling1', function () {
+        return view('stagespage.drill1');
+    })->name('drill1');
+    
+    Route::get('/drilling2', function () {
+        return view('stagespage.drill2');
+    })->name('drill2');
+    
+    Route::get('/drilling3', function () {
+        return view('stagespage.drill3');
+    })->name('drill3');
+    Route::get('/drilling4', function () {
+        return view('stagespage.drill4');
+    })->name('drill4');
+    Route::get('/drilling5', function () {
+        return view('stagespage.drill5');
+    })->name('drill5');
+    
+    Route::get('/drilling6', function () {
+        return view('stagespage.drill6');
+    })->name('drill6');
+    Route::get('/drilling7', function () {
+        return view('stagespage.drill7');
+    })->name('drill7');
+    Route::get('/drilling8', function () {
+        return view('stagespage.drill8');
+    })->name('drill8');
+    Route::get('/drilling9', function () {
+        return view('stagespage.drill9');
+    })->name('drill9');
+    Route::get('/drilling10', function () {
+        return view('stagespage.drill10');
+    })->name('drill10');
+    Route::get('/drilling11', function () {
+        return view('stagespage.drill11');
+    })->name('drill11');
+    Route::get('/drilling12', function () {
+        return view('stagespage.drill12');
+    })->name('drill12');
+    Route::get('/drilling13', function () {
+        return view('stagespage.drill13');
+    })->name('drill13');
+    Route::get('/drilling14', function () {
+        return view('stagespage.drill14');
+    })->name('drill14');
+    Route::get('/drilling15', function () {
+        return view('stagespage.drill15');
+    })->name('drill15');
+    Route::get('/drilling16', function () {
+        return view('stagespage.drill16');
+    })->name('drill16');
+    Route::get('/drilling17', function () {
+        return view('stagespage.drill17');
+    })->name('drill17');
+    Route::get('/drilling18', function () {
+        return view('stagespage.drill18');
+    })->name('drill18');
+    Route::get('/drilling19', function () {
+        return view('stagespage.drill19');
+    })->name('drill19');
+    Route::get('/drilling20', function () {
+        return view('stagespage.drill20');
+    })->name('drill20');
+    Route::get('/drilling21', function () {
+        return view('stagespage.drill21');
+    })->name('drill21');
+    Route::get('/drilling22', function () {
+        return view('stagespage.drill22');
+    })->name('drill22');
+    Route::get('/drilling23', function () {
+        return view('stagespage.drill23');
+    })->name('drill23');
+    //blasting Pages
+    Route::get('/blast', function () {
+        return view('drillpages.blast');
+    })->name('blast')->middleware('auth:web');
+    Route::get('/blast1', function () {
+        return view('drillpages.blast1');
+    })->name('blast1')->middleware('auth:web');
+    Route::get('/blast2', function () {
+        return view('drillpages.blast2');
+    })->name('blast2')->middleware('auth:web');
+    
+    Route::get('/blast3', function () {
+        return view('drillpages.blast3');
+    })->name('blast3')->middleware('auth:web');
+    
+    Route::get('/blast4', function () {
+        return view('drillpages.blast4');
+    })->name('blast4')->middleware('auth:web');
+    
+    Route::get('/blast5', function () {
+        return view('drillpages.blast5');
+    })->name('blast5')->middleware('auth:web');
+    Route::get('/blast6', function () {
+        return view('drillpages.blast6');
+    })->name('blast6')->middleware('auth:web');
+    Route::get('/blast7', function () {
+        return view('drillpages.blast7');
+    })->name('blast7')->middleware('auth:web');
+    Route::get('/blast8', function () {
+        return view('drillpages.blast8');
+    })->name('blast8')->middleware('auth:web');
+    
+    Route::get('/blast9', function () {
+        return view('drillpages.blast9');
+    })->name('blast9')->middleware('auth:web');
+    
+    Route::get('/blast10', function () {
+        return view('drillpages.blast10');
+    })->name('blast10')->middleware('auth:web');
+    
+    Route::get('/blast11', function () {
+        return view('drillpages.blast11');
+    })->name('blast11')->middleware('auth:web');
+    
+    Route::get('/blast12', function () {
+        return view('drillpages.blast12');
+    })->name('blast12')->middleware('auth:web');
+    
+    Route::get('/blast13', function () {
+        return view('drillpages.blast13');
+    })->name('blast13')->middleware('auth:web');
+    
+    Route::get('/blast14', function () {
+        return view('drillpages.blast14');
+    })->name('blast14')->middleware('auth:web');
+    
+    Route::get('/blast15', function () {
+        return view('drillpages.blast15');
+    })->name('blast15')->middleware('auth:web');
+
+
+
+    /*cycle operation Pages */
+
+Route::get('/cycleope', function () {
+    return view('cycleopepages.cycleope');
+})->name('cycleope')->middleware('auth:web');
+
+Route::get('/cycleope1', function () {
+    return view('cycleopepages.cycleope1');
+})->name('cycleope1')->middleware('auth:web');
+
+Route::get('/cycleope2', function () {
+    return view('cycleopepages.cycleope2');
+})->name('cycleope2')->middleware('auth:web');
+
+Route::get('/cycleope3', function () {
+    return view('cycleopepages.cycleope3');
+})->name('cycleope3')->middleware('auth:web');
+
+Route::get('/cycleope4', function () {
+    return view('cycleopepages.cycleope4');
+})->name('cycleope4')->middleware('auth:web');
+
+Route::get('/cycleope5', function () {
+    return view('cycleopepages.cycleope5');
+})->name('cycleope5')->middleware('auth:web');
+Route::get('/cycleope6', function () {
+    return view('cycleopepages.cycleope6');
+})->name('cycleope6')->middleware('auth:web');
+
+Route::get('/cycleope7', function () {
+    return view('cycleopepages.cycleope7');
+})->name('cycleope7')->middleware('auth:web');
+
 
     Route::match(['get', 'post'], '/ulogout', [UserController::class, 'ulogout'])->name('ulogout');
 });
