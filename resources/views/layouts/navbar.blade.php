@@ -2,9 +2,11 @@
   <div class="container-fluid">
             <a class="navbar-brand " href="/"><img class="image" src="{{ asset('img/LOGO.png') }}"  style="width: 250px;" alt="Mineblast Image"/>
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" >
+           <div class="menu-icon">
+           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" >
                 <span><img class="image" src="{{ asset('img/menu-bar.png') }}"  style="width: 40px;" alt="Mineblast Image"/></span>
             </button>
+           </div>
             <div class="collapse navbar-collapse" id="navbarSupportedContent"style="margin-left: 3rem;" >
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto fw-bold">
                         <li class="nav-item">

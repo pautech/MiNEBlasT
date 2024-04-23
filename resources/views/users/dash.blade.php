@@ -5,8 +5,8 @@
 @section('content')
 
 <div class="container-fluid dashboard d-flex align-items-center justify-content-center">
-    <img class="" src="{{asset('Avatar.png')}} " style="width: 30em;height:auto; margin-top:8em;" alt="Avatar"/>
-    <div id="dynamicContent" class="speech-bubble p-4 shadow-lg" style="margin-top:-10em; margin-left:-4em;"></div>
+    <img class="" src="{{asset('img/robot.png')}} " style="width: 25%;height:auto; margin-top:8em;" alt="Avatar"/>
+    <div id="dynamicContent" class="speech-bubble p-4 shadow-lg" style="margin-top:-10em;"></div>
 
 </div>
 
