@@ -13,7 +13,7 @@
                                    <!-- <img class="shadow-sm rounded" src="{{ asset('img/blasting.gif') }}" style="max-width: 90%; max-height: 90%;" alt="drilling logo">-->
                                 </a>
                                 <a href="{{ route('quizzeseasy') }}" class="text-decoration-none text-dark">
-                                    <h3 class=" text-center ">Easy</h3>
+                                    <h3 class=" text-center ">Easy Round</h3>
                                 </a>
                             </div>
 
@@ -24,7 +24,7 @@
                                    <!-- <img class="shadow-sm rounded" src="{{ asset('img/blasting.gif') }}" style="max-width: 90%; max-height: 90%;" alt="drilling logo">-->
                                 </a>
                                 <a href="{{ route('minequiz') }}" class="text-decoration-none text-dark">
-                                    <h3 class=" text-center ">Moderate</h3>
+                                    <h3 class=" text-center ">Medium</h3>
                                 </a>
                             </div>
 
