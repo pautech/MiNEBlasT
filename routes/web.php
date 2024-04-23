@@ -198,6 +198,13 @@ Route::get('/chatlearn', function () {
 
 
 /*cycle operation Pages */
+Route::get('/cycleope7', function () {
+    return view('cycleopepages.cycleope7');
+})->name('cycleope7');
+
+Route::get('/cycleope8', function () {
+    return view('cycleopepages.cycleope8');
+})->name('cycleope8');
 
 Route::get('/cycleope', function () {
     return view('cycleopepages.cycleope');
@@ -225,11 +232,6 @@ Route::get('/cycleope5', function () {
 Route::get('/cycleope6', function () {
     return view('cycleopepages.cycleope6');
 })->name('cycleope6');
-
-
-Route::get('/cycleope7', function () {
-    return view('cycleopepages.cycleope7');
-})->name('cycleope7');
 
 
 
