@@ -316,9 +316,16 @@ Route::get('/cycleope29', function () {
     return view('cycleopepages.cycleope29');
 })->name('cycleope29');
 
+/*Quizzes routes*/
+
+Route::get('/quizzesmain', function () {
+    return view('Quizzes.quizzesmain');
+})->name('quizzesmain');
 
 
-
+Route::get('/quizzeseasy', function () {
+    return view('Quizzes.quizzeseasy');
+})->name('quizzeseasy');
 
 // ... (existing routes)
 

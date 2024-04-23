@@ -15,19 +15,19 @@
 <script>
     const quizData = [
         {
-            question: "What is the capital of France?",
-            answers: ["Paris", "London", "Berlin", "Madrid"],
-            correct: "Paris"
+            question: "Depth: shallow to moderate (< 1500 ft or 450 m for coal, < 2000 ft or 600 m for noncoal, < 3000 ft or 900 m for potash)",
+            answers: ["Room and Pillar Mining", "Shrinkage Stoping", "Cut and Fill Stoping"],
+            correct: "Room and Pillar Mining"
         },
         {
-            question: "Which planet is known as the Red Planet?",
-            answers: ["Earth", "Mars", "Jupiter", "Saturn"],
-            correct: "Mars"
+            question: "Choose at least 3 types of underground mining: unsupported methods",
+            answers: ["Stope and Pillar Mining", "Shrinkage Stoping", "Cut and Fill Stoping", "Sublevel Stoping"],
+            correct: ["Stope and Pillar Mining","Shrinkage Stoping","Sublevel Stoping"]
         },
         {
-            question: "What is the largest mammal?",
-            answers: ["Elephant", "Whale", "Giraffe", "Hippo"],
-            correct: "Whale"
+            question: "Deposit size: narrow to moderate width (6 to 100 ft or 2 to 30 m), fairly",
+            answers: ["Stope and Pillar Mining", "Sublevel Stoping", "Cut and Fill Stoping"],
+            correct: ""
         }
        
     ];

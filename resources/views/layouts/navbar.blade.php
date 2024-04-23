@@ -20,7 +20,7 @@
                             <li><a class="dropdown-item" href="{{ route('dashboard') }}"style="font-size: 1.2em;">DashBoard</a></li>
                             <li><a class="dropdown-item" href="{{ route('chatgptlearn') }}"style="font-size: 1.2em;">Chat Learn</a></li>
                             <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="{{ route('minequiz') }}"style="font-size: 1.2em;">Test Your Knowledge</a></li>
+                            <li><a class="dropdown-item" href="{{ route('quizzesmain') }}"style="font-size: 1.2em;">Test Your Knowledge</a></li>
                             <li><a class="dropdown-item" href="{{ route('glossary') }}"style="font-size: 1.2em;">Glossary</a></li>
                         </ul>
                         </li>
