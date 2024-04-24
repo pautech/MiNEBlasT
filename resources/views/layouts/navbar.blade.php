@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg bg-body-tertiary ">
+<nav class="navbar navbar-expand-lg bg-body-tertiary main-nav" style="height=auto width:100%;">
   <div class="container-fluid">
             <a class="navbar-brand " href="/"><img class="image" src="{{ asset('img/LOGO.png') }}"  style="width: 250px;" alt="Mineblast Image"/>
             </a>

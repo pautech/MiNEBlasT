@@ -178,6 +178,16 @@ gap: 3rem;
 }
 
 
+@media (max-width: 767px) {
+   .ptext{
+    color: #4CAF50;
+    font-size: 2rem;
+
+   }
+   
+ }
+
+
 
 .question {
   margin-bottom: 20px;
