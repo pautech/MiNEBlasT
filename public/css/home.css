@@ -180,13 +180,20 @@ gap: 3rem;
 
 @media (max-width: 767px) {
    .ptext{
-    color: #4CAF50;
+
     font-size: 2rem;
 
    }
    
  }
+ @media (max-width: 768px) {
+  .main-ul{
+      margin-top: 300px;
 
+
+  }
+  
+}
 
 
 .question {

@@ -548,4 +548,6 @@ Route::post('/registration', [UserController::class, 'store'])->name('registrati
 Route::get('/ulogin', [UserController::class, 'showLoginForm'])->name('ulogin');
 Route::post('/ulogin', [UserController::class, 'ulogin']);
 Route::get('/drilling11', [UserController::class, 'quizBanner'])->name('drill11');
+
+Route::get('/drilling15', [UserController::class, 'quizBanner1'])->name('drill15');
 Route::post('/chat', 'App\Http\Controllers\ChatController');

@@ -8,7 +8,7 @@
 
     <div class="container">
          <div class=" d-flex justify-content-center" >
-            <img class=" shadow-lg mt-5" src="{{ asset('img/drill-d.png') }}" alt="drill picture" style="height:20rem; width:40rem;">
+            <img class=" shadow-lg mt-5" src="{{ asset('img/drill-d.png') }}" alt="drill picture" style="height:80%; width:80%;">
          </div>
          <div class="container drill-main d-flex  justify-content-center mt-5 ">
                <p class="fs-5 text-justify">For many years dynamite was the primary explosive used underground, but this has largely been replaced by blasting agents based on ammonium nitrate (AN; chemical formula NH4NO3) and fuel oil (FO; chemical formula CH2). Neither of these components is explosive by itself, but, when mixed in the proper weight ratio (94.5 percent AN, 5.5 percent FO) and ignited, they cause the following chemical reaction:</p>  

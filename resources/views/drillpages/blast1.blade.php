@@ -13,17 +13,21 @@
     <div class="row ml-5">
             <div class="col ">
                 <h1 class=" pt-3 mt-3 h1-drill1-title">Primary Blasting</h1>
-                 <img class="mt-5" src="{{ asset('img/underbreak.png') }}" alt="drill picture" style="height:25rem; width:50rem;">
+                 <img class="mt-5" src="{{ asset('img/Underbreak.png') }}" alt="drill picture" style="height:80%; width:100%;">
     
             </div>
     </div>
     </div>
-        <div class=" mt-5 btn d-flex justify-content-end  outline-none  border-0">
+       
+    </div>
+   
+   </div>
+   <br>
+   <br>
+   <div class=" mt-5 btn d-flex justify-content-end  outline-none  border-0 mr-5">
                 <a class="text-decoration-none text-dark " href="{{ route('blast') }}"><button type="button" class="rock-btn shadow-lg pl-5 pr-5">Back</button></a>
                 <a class="text-decoration-none text-dark " href="{{ route('blast2') }}"><button type="button" class="rock-btn shadow-lg pl-5 pr-5 ml-3">Next</button></a>
         </div>
-    </div>
-   </div>
-  
+  <br>
 
 @endsection

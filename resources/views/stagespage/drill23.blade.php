@@ -30,7 +30,7 @@
      </div>
       <div class=" mb-3 mt-5 btn d-flex justify-content-end outline-none  border-0">
         <a class="text-decoration-none text-dark " href="{{ route('drill22') }}"><button type="button" class="rock-btn shadow-lg pl-5 pr-5">Back</button> </a>
-        <a class="text-decoration-none text-dark " href="{{ route('drill23') }}"><button type="button" class="rock-btn shadow-lg pl-5 pr-5 ml-3">Next</button> </a>
+        <a class="text-decoration-none text-dark " href="{{ route('courses') }}"><button type="button" class="rock-btn shadow-lg pl-5 pr-5 ml-3">Done</button> </a>
       
         
       </div>

@@ -24,8 +24,9 @@
        
    
       </div>
-      <div class=" d-flex justify-content-center" >
-      <img class=" shadow-lg mt-5" src="{{ asset('img/pop.png') }}" alt="drill picture" style="height:10rem; width:50rem;">
+      <div class=" " >
+         <br>
+      <h4><strong>3. Pop shooting- </strong> blast hole is usually drilled near a crack or depression in the rock, and is directed toward the center of the mass and then charge is filled in it and denoted.</h4>
       </div>
 
       <div class=" mt-5 btn d-flex justify-content-end  outline-none  border-0">

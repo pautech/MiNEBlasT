@@ -10,7 +10,7 @@
                   <div class="container-1 ">
                               <div class="row"> 
                                           <div class="tree">
-                                                <ul>
+                                                <ul class="main-ul">
                                                       <li> <a href="#"><span>Underground Mining:Supported Methods </span></a>
                                                       <ul>	
                                                             <li><a href="#" class="pop-up"><span class="fw-bold">Cut-and-Fill Stoping</span></a></li>
@@ -24,14 +24,13 @@
                                     
                   </div>         
                         
-                      
-   
-   </div>
-   <div class=" mt-5 btn d-flex justify-content-end  outline-none  border-0">
+                  <div class=" mt-5 btn d-flex justify-content-end  outline-none  border-0">
                               <a class="text-decoration-none text-dark " href="{{ route('blast10') }}"><button type="button" class="rock-btn shadow-lg pl-5 pr-5 ml-3">Back</button></a>
                               <a class="text-decoration-none text-dark " href="{{ route('blast12') }}"><button type="button" class="rock-btn shadow-lg pl-5 pr-5 ml-3">Next</button></a>
-      </div>
-
+      </div>   
+   
+   </div>
+  
 
 
 

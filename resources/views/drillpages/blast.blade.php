@@ -10,21 +10,28 @@
    <div class="container drill-main d-flex  justify-content-center mt-5 ">
     <p class="text-justify fs-5">Blasting in a mine generally occurs in two phases, primary blasting and secondary blasting. Primary blasting involves breaking down of in-situ rock in development and stoping as well as by drilling holes in rocks. Secondary blasting is performed to get rid of overburden.</p>
     <div class="d-flex justify-content-center "><h3>Two phases of blasting</h3>   </div> 
-    <div class="row ml-5">
-            <div class="col">
-                <h1 class=" pt-3 mt-3 h1-drill1-title">Primary Blasting</h1>
-                <a class="text-decoration-none text-dark " href="{{ route('drill18') }}"> <img class="mt-5" src="{{ asset('img/shaft.png') }}" alt="drill picture" style="height:20rem; width:20rem;"></a>
+    <br>
+    <br>
+    <div class="d-flex justify-content-around align-items-center  flex-wrap">
+            <div class="">
+                
+            <div class="primary shadow-lg d-flex justify-content-center align-items-center" style="height:20rem; width:20rem;">
+            <h1 class=" pt-3  h1-drill1-title">Primary Blasting</h1>
+            </div>
+               
 
             </div>
-            <div class="col">
-                <h1 class=" pt-3 mt-3 h1-drill1-title">Secondary Blasting</h1>
-                <a class="text-decoration-none text-dark " href="{{ route('drill17') }}"> <img class="mt-5" src="{{ asset('img/raise.png') }}" alt="drill picture" style="height:20rem; width:20rem;"></a>
+            <div class="">
+            <div class="primary shadow-lg d-flex justify-content-center align-items-center" style="height:20rem; width:20rem;">
+            <h1 class=" pt-3  h1-drill1-title">Secondary Blasting</h1>
+              
             </div>
         </div>
-      <div class=" mt-5 btn d-flex justify-content-end  outline-none  border-0">
+     
+</div>
+<div class=" mt-5 btn d-flex justify-content-end  outline-none  border-0">
          <a class="text-decoration-none text-dark " href="{{ route('blast1') }}"><button type="button" class="rock-btn shadow-lg pl-5 pr-5 ml-3">Next</button></a>
       </div>
-</div>
    </div>
   
 
