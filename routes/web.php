@@ -20,21 +20,6 @@ Route::get('/', function () {
     return view('main');
 })->name('home'); // You can replace 'home' with your desired name
 
-Route::get('/about', function () {
-    return view('about');
-})->name('about');
-
-
-
-Route::get('/glossary', function () {
-    return view('glossary');
-})->name('glossary');
-
-Route::get('/references', function () {
-    return view('references');
-});
-
-
 Route::get('/checkpoint', function () {
     return view('menu');
 })->name('checkpoint');
@@ -51,6 +36,20 @@ Route::get('/courses', function () {
 Route::get('/survey', function () {
     return view('stagespage.survey');
 })->name('survey');
+
+Route::get('/about', function () {
+    return view('about');
+})->name('about');
+
+
+
+Route::get('/glossary', function () {
+    return view('glossary');
+})->name('glossary');
+
+Route::get('/references', function () {
+    return view('references');
+});
 
 Route::get('/drilling', function () {
     return view('stagespage.drill');
