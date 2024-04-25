@@ -67,12 +67,12 @@
       //Populate sending message
       $(".messages > .message").last().after('<div class="right message">' +
         '<p>' + $("form #message").val() + '</p>' +
-        '<img src="https://assets.edlin.app/images/rossedlin/03/rossedlin-03-100.jpg" alt="Avatar">' +
+        '<img src="{{ asset('img/LOI.jpg') }}" alt="Avatar">' +
         '</div>');
 
       //Populate receiving message
       $(".messages > .message").last().after('<div class="left message">' +
-        '<img src="{{ asset('img/LOI.jpg') }}" alt="Avatar">' +
+        '<img src="{{ asset('img/robot.png') }}" alt="Avatar">' +
         '<p>' + res + '</p>' +
         '</div>');
 

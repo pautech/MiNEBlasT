@@ -3,74 +3,51 @@
 @section('content')
 
 <div id="carouselExampleIndicators" class="carousel slide">
-    <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    </div>
+   
     <div class="carousel-inner">
             
                      <div class="carousel-item active container-fluid courses d-flex align-items-center justify-content-center">
-                            <div class="course-item h-50 w-25 mr-5 border-0 shadow-lg rounded d-flex flex-column align-items-center">
-                            <a href=""> <img class="mt-5 shadow-sm rounded" src="{{ asset('img/survey.gif') }}" style="width: 200px;" alt="surveying Logo"></a>
-                                <h3 class="mt-3 pt-2">Survey</h3>
+
+                        
+
+                            <div class="course-item h-50 w-25 mr-5 border-0 shadow-lg rounded d-flex flex-column align-items-center justify-content-center">
+                                <a href="{{ route('drill') }}">
+                                    <img class="rounded" src="{{ asset('img/drill 1.gif') }}" style="max-width: 88%; max-height: 88%;" alt="drilling logo">
+                                </a>
+                                <a class="text-decoration-none text-dark" href="{{ route('drill') }}">
+                                    <h3 class=" text-center z-drill">Drilling</h3>
+                                </a>
                             </div>
-                            <div class="course-item h-50 w-25 mr-5 border-0 shadow-lg rounded d-flex flex-column align-items-center">
-                                <a href=""><img class="mt-4 rounded" src="{{ asset('img/drill 1.gif') }}" style="width: 200px;" alt="drilling logo"></a>
-                                <h3 class="mt-1 pt-1">Drilling</h3>
+
+                            <div class="course-item h-50 w-25 mr-5 border-0 shadow-lg rounded d-flex flex-column align-items-center justify-content-center">
+                                <a href="{{ route('blast') }}">
+                                    <img class="shadow-sm rounded" src="{{ asset('img/blasting.gif') }}" style="max-width: 90%; max-height: 90%;" alt="drilling logo">
+                                </a>
+                                <a href="{{ route('blast') }}" class="text-decoration-none text-dark">
+                                    <h3 class=" text-center ">Blasting</h3>
+                                </a>
                             </div>
-                            <div class="course-item h-50 w-25 border-0 shadow   -lg rounded d-flex flex-column align-items-center">
-                                <a href=""><img class="mt-5  shadow-sm rounded" src="{{ asset('img/loading.gif') }}" style="width: 220px;" alt="drilling logo"></a>
-                                <h3 class="mt-5 pt-1">Loading</h3>
+
+                            <div class="course-item h-50 w-25 mr-5 border-0 shadow-lg rounded d-flex flex-column align-items-center justify-content-center">
+                                <a href="{{ route('cycleope') }}">
+                                    <img class="shadow-sm rounded ml-3 mt-4" src="{{ asset('img/cycle.png') }}" style="max-width: 90%; max-height: 90%;" alt="drilling logo">
+                                </a>
+                                <a href="{{ route('cycleope') }}" class="text-decoration-none text-dark">
+                                    <h3 class=" text-center mt-3">Cycle of Drilling and Blasting</h3>
+                                </a>
                             </div>
+
+
+
+
+
+
                     </div>
-            
-
-
-            <div class="carousel-item">
-                    <div class="container-fluid courses d-flex align-items-center justify-content-center">
-                            <div class="course-item h-50 w-25 mr-5 border-0 shadow-lg rounded d-flex flex-column align-items-center">
-                            <a href=""> <img class="mt-5  shadow-sm rounded" src="{{ asset('img/blasting.gif') }}" style="width: 250px;" alt="drilling logo"></a>
-                                <h3 class="mt-5 pt-1">Blasting</h3>
-                            </div>
-                            <div class="course-item h-50 w-25 mr-5 border-0 shadow-lg rounded d-flex flex-column align-items-center">
-                                <a href=""><img class="mt-5 shadow-sm rounded" src="{{ asset('img/ventilation.gif') }}" style="width: 250px;" alt="drilling logo"></a>
-                                <h3 class="mt-4 pt-3">Ventilating</h3>
-                            </div>
-                            <div class="course-item h-50 w-25 border-0 shadow-lg rounded d-flex flex-column align-items-center">
-                                <a href=""><img class="mt-5 shadow-sm rounded" src="{{ asset('img/dislodge.gif') }}" style="width: 245px;" alt="drilling logo"></a>
-                                <h3 class="mt-4 pt-3">Dislodge</h3>
-                            </div>
-                    </div>
-            </div>
-
-
-            <div class="carousel-item">
-                    <div class="container-fluid courses d-flex align-items-center justify-content-center">
-                            <div class="course-item h-50 w-25 mr-5 border-0 shadow-lg rounded d-flex flex-column align-items-center">
-                            <a href=""> <img class="mt-5 pt-2 rounded" src="{{ asset('img/scale.gif') }}" style="width: 250px;" alt="drilling logo"></a>
-                                <h3 class="mt-4 pt-3">Scale</h3>
-                            </div>
-                            <div class="course-item h-50 w-25 mr-5 border-0 shadow-lg rounded d-flex flex-column align-items-center">
-                                <a href=""><img class="mt-5 rounded" src="{{ asset('img/bolts.gif') }}" style="width: 250px;" alt="drilling logo"></a>
-                                <h3 class="mt-4 pt-3">Bolt</h3>
-                            </div>
-                           
-                    </div>
-            </div>
-
   </div>
         
     
 
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-    </button>
+   
 </div>
 
 

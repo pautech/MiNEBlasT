@@ -65,10 +65,8 @@
                             
                             <div class="col-lg-6 d-flex align-items-center gradient-custom-2">
                                 <div class="text-white px-3 py-4 p-md-5 mx-md-4">
-                                    <h4 class="mb-4">We are more than just a company</h4>
-                                    <p class="small mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                    <h4 class="mb-4">Mastering the Art of Mining: Drilling and Blasting Excellence Await!</h4>
+                                    <p class="small mb-0">These courses offer a unique opportunity to delve into the intricacies of drilling and blasting, crucial for safe and efficient mining operations. As you embark on this journey, remember that every knowledge gained is a step closer to becoming an expert in your field. Embrace the challenges, stay curious, and keep pushing your boundaries. </p>
                                 </div>
                             </div>
                         </div>
