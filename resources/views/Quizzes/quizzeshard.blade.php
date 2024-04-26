@@ -4,6 +4,8 @@
 
 @include('layouts.navbar')
 
+<div class="container" style="margin-top:60px;">
+    <h3 class="text-center">Identify the process on the given video</h3>
 <div class="d-flex justify-content-center align-items-center main-quiz1">
     <div class="d-flex justify-content-center align-items-center flex-column shadow-lg main-quiz p-5 border-0 rounded">
         <div id="quiz" class="container">
@@ -65,6 +67,7 @@
             </div>
         </div>
     </div>
+</div>
 </div>
 
 <script>

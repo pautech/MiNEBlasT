@@ -326,6 +326,12 @@ Route::get('/quizzeseasy', function () {
     return view('Quizzes.quizzeseasy');
 })->name('quizzeseasy');
 
+Route::get('/quizzeshard', function () {
+    return view('Quizzes.quizzeshard');
+})->name('quizzeshard');
+
+
+
 // ... (existing routes)
 
 // Redirect unauthenticated users to the menu page
