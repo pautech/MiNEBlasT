@@ -21,7 +21,7 @@
 document.addEventListener('DOMContentLoaded', function () {
     var jsonData = [
         { "message": "Welcome! This is Drilling and Blasting  " },
-        { "introduction": "PMethod Sequences. Let’s Begin…" },
+        { "introduction": "Method Sequences. Let’s Begin…" },
        
     ];
 

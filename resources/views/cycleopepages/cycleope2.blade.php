@@ -24,6 +24,61 @@
    
    </div>
 
-  
+   <div id="dynamicContent1" class="speech-bubble1"></div>
+ 
+
+
+ <script>
+             document.addEventListener('DOMContentLoaded', function () {
+                 var jsonData = [
+                     { "message": "Surveying, Geological mapping " },
+                     { "introduction": " Let's start learning" },
+                     
+                     
+                 ];
+ 
+                 var currentIndex = 0;
+ 
+                 updateDynamicContent();
+ 
+                 function updateDynamicContent() {
+                     var dynamicContentDiv = document.getElementById('dynamicContent1');
+                     var data = jsonData[currentIndex];
+                  
+ 
+                     const message = new SpeechSynthesisUtterance();
+                     message.text = Object.values(data)[0];
+                     const speechSynthesis = window.speechSynthesis;
+ 
+                     // Set voice to a woman's voice (you may need to adjust this based on available voices)
+                     var womanVoice = speechSynthesis.getVoices().find(voice => voice.name.includes('female'));
+                     if (womanVoice) {
+                         message.voice = womanVoice;
+                     }
+ 
+                     // Calculate delay based on text length
+                     var textLength = Object.values(data)[0].length;
+                     var delay = textLength * 5; // Adjust the multiplier as needed
+ 
+                     // Set an event listener for the 'end' event
+                     message.addEventListener('end', function () {
+                         // Increment index or reset to 0
+                         currentIndex = (currentIndex + 1) % jsonData.length;
+ 
+                         // Set a delay before updating the content again
+                         setTimeout(updateDynamicContent, delay);
+
+
+                         if (currentIndex === jsonData.length - 1) {
+                // Redirect to home route if at the last index
+                window.location.href = '{{ route("cycleope3") }}';
+                return;
+            }
+                     });
+ 
+                     speechSynthesis.speak(message);
+                 }
+             });
+ </script>
 
 @endsection
