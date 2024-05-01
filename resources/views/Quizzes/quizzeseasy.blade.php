@@ -238,7 +238,7 @@ function saveScore(totalScore) {
             totalScore: totalScore
         },
         success: function(response) {
-            console.log('Score saved successfully: ' + totalScore);
+            console.log(response);
         },
         error: function(xhr) {
             console.error('Error saving score');
