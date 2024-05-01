@@ -19,7 +19,7 @@ class ChatController extends Controller
                 "Content-Type" => "application/json",
                 "Authorization" => "Bearer " . env('CHAT_GPT_KEY')
             ])->post('https://api.openai.com/v1/chat/completions', [
-                "model" => "gpt-3.5-turbo",
+                "model" => "gpt-4-turbo",
                 "messages" => [
                     [
                         "role" => "user",
@@ -32,7 +32,7 @@ class ChatController extends Controller
 
             return $response['choices'][0]['message']['content'];
         } catch (Throwable $e) {
-            return "Chat GPT Limit Reached. This means too many people have used this demo this month and hit the FREE limit available. You will need to wait, sorry about that.";
+            return "Chat GPT Limit Reached. This means too many people have used this chatlearn this month and hit the limit available. You will need to wait, sorry about that.";
         }
     }
 }
