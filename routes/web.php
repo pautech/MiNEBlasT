@@ -3,7 +3,7 @@
 
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\ScoreController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -542,8 +542,15 @@ Route::get('/cycleope7', function () {
 
 
     Route::match(['get', 'post'], '/ulogout', [UserController::class, 'ulogout'])->name('ulogout');
+
+    Route::post('/save-score', [ScoreController::class, 'save'])->name('save-score');
+
+
 });
 
+
+
+Route::post('/save-score', [ScoreController::class, 'save'])->name('save-score');
 
 
 Route::get('/registration', [UserController::class, 'registration'])->name('registration');

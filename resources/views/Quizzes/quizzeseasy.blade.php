@@ -220,7 +220,33 @@
 
     // Display total score
     document.getElementById("totalScore").innerHTML = "Total Score: " + totalScore;
+
+   // Save the score
+   saveScore(totalScore);
+
+    
 }
+
+function saveScore(totalScore) {
+    var token = '{{ csrf_token() }}';
+
+    $.ajax({
+        url: '{{ route('save-score') }}',
+        type: 'POST',
+        data: {
+            _token: token,
+            totalScore: totalScore
+        },
+        success: function(response) {
+            console.log('Score saved successfully: ' + totalScore);
+        },
+        error: function(xhr) {
+            console.error('Error saving score');
+        }
+    });
+}
+
+
 
     </script>
 
