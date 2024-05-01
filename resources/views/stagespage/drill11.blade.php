@@ -13,7 +13,7 @@
         <div id="dynamicContent1" class="speech-bubble1"></div>
             <div class="col quiztext" style="position: relative;">
                 <h3 style="position: absolute; top: 25%; left: 50%; transform: translate(-50%, -50%); z-index: 1;">It's time for a quiz!</h3>
-                <p class="fs-5 text-justify ptext" style="position: absolute; top: 53%; left: 50%; width: 70%; transform: translate(-50%, -50%); z-index: 1;">Hello, {{ $userName }}! Engr. Lorry here with a challenge for you. I've sent you a message on the following page, and you'll need to respond with your answers to proceed to the next message. Once you've completed the challenge, you can move on to the next topic.</p>
+                <p class="fs-5 text-justify ptext" style="position: absolute; top: 53%; left: 50%; width: 70%; transform: translate(-50%, -50%); z-index: 1;">Hello, {{ $userName }}! Engineer. Lorry here with a challenge for you. I've sent you a message on the following page, and you'll need to respond with your answers to proceed to the next message. Once you've completed the challenge, you can move on to the next topic.</p>
                 <img class="shadow-sm quiz-banner img-fluid" src="{{ asset('img/quiz.png') }}" alt="Quiz Image">
             </div>  
         </div>
