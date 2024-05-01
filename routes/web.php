@@ -4,6 +4,7 @@
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ScoreController;
+use App\Http\Controllers\QuizController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -645,13 +646,19 @@ Route::get('/quizzeshard', function () {
     Route::match(['get', 'post'], '/ulogout', [UserController::class, 'ulogout'])->name('ulogout');
 
     Route::post('/save-score', [ScoreController::class, 'save'])->name('save-score');
+    //med
+    Route::post('/save-mediumscore', [QuizController::class, 'saveMediumScore'])->name('save-mediumscore');
+
 
 
 });
 
 
-
+//easy
 Route::post('/save-score', [ScoreController::class, 'save'])->name('save-score');
+//medium
+Route::post('/save-mediumscore', [QuizController::class, 'saveMediumScore'])->name('save-mediumscore');
+
 
 
 Route::get('/registration', [UserController::class, 'registration'])->name('registration');

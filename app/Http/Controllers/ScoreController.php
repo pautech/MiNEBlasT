@@ -21,4 +21,6 @@ class ScoreController extends Controller
 
         return response()->json(['message' => 'Score saved successfully'], 200);
     }
+
+    
 }

@@ -44,7 +44,7 @@
     const playAgainButton = document.getElementById("play-again");
     const resultContainer = document.getElementById("result");
     let currentQuestion = 0;
-    let score = 0;
+    let medscore = 0;
 
     function shuffle(array) {
         for (let i = array.length - 1; i > 0; i--) {
@@ -81,7 +81,7 @@
 
         if (selectedAnswer === correctAnswer) {
             event.target.classList.add("correct");
-            score++;
+            medscore++;
         } else {
             event.target.classList.add("wrong");
         }
@@ -96,8 +96,11 @@
     }
 
     function showResults() {
-        resultContainer.innerHTML = `You scored ${score} out of ${quizData.length}`;
+        resultContainer.innerHTML = `You scored ${medscore} out of ${quizData.length}`;
         playAgainButton.style.display = "inline-block";
+
+        // Save the score
+        saveMedScore(medscore);
     }
 
     function nextQuestion() {
@@ -116,7 +119,7 @@
 
     function playAgain() {
         currentQuestion = 0;
-        score = 0;
+        medscore = 0;
         buildQuiz();
         resultContainer.innerHTML = "";
         submitButton.style.display = "inline-block";
@@ -136,6 +139,31 @@
     nextButton.addEventListener("click", nextQuestion);
 
     playAgainButton.addEventListener("click", playAgain);
+
+
+
+
+
+
+    function saveMedScore(medscore) {
+    var token = '{{ csrf_token() }}';
+
+    $.ajax({
+        url: '{{ route('save-mediumscore') }}',
+        type: 'POST',
+        data: {
+            _token: token,
+            totalScore: medscore
+        },
+        success: function(response) {
+            console.log(response);
+        },
+        error: function(xhr) {
+            console.error('Error saving score');
+        }
+    });
+}
+
 
 </script>
 
