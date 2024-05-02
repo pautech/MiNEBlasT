@@ -279,7 +279,7 @@ function shuffleArray(array) {
 
 
 //to save score in the database
-    function savehardScore(score) {
+function savehardScore(score) {
     var token = '{{ csrf_token() }}';
 
     $.ajax({
@@ -290,13 +290,16 @@ function shuffleArray(array) {
             totalScore: score
         },
         success: function(response) {
-            console.log(response);
+            console.log('Score saved successfully');
+            console.log(response); // If you expect a response, you can log it here
         },
-        error: function(xhr) {
-            console.error('Error saving score');
+        error: function(xhr, status, error) {
+            console.error('Error saving score:', error); // Log the error message
+            console.log(xhr.responseText); // Log the full response text for more details
         }
     });
 }
+
 
    
 </script>

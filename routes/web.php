@@ -650,8 +650,7 @@ Route::get('/quizzeshard', function () {
     //med
     Route::post('/save-mediumscore', [QuizController::class, 'saveMediumScore'])->name('save-mediumscore');
     //hard
-    Route::post('/save-hard-score', [HardQuizController::class, 'savehardScore'])->name('save-hard-score');
-
+    Route::post('/save-hard-score', [HardQuizController::class, 'saveHardScore'])->name('save-hard-score');
 
 
 });
@@ -663,8 +662,7 @@ Route::post('/save-score', [ScoreController::class, 'save'])->name('save-score')
 Route::post('/save-mediumscore', [QuizController::class, 'saveMediumScore'])->name('save-mediumscore');
 
 //hard
-Route::post('/save-hard-score', [HardQuizController::class, 'savehardScore'])->name('save-hard-score');
-
+Route::post('/save-hard-score', [HardQuizController::class, 'saveHardScore'])->name('save-hard-score');
 
 
 
