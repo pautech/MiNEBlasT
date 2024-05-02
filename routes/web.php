@@ -3,7 +3,9 @@
 
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\ScoreController;
+use App\Http\Controllers\QuizController;
+use App\Http\Controllers\HardQuizController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -326,6 +328,12 @@ Route::get('/quizzeseasy', function () {
     return view('Quizzes.quizzeseasy');
 })->name('quizzeseasy');
 
+Route::get('/quizzeshard', function () {
+    return view('Quizzes.quizzeshard');
+})->name('quizzeshard');
+
+
+
 // ... (existing routes)
 
 // Redirect unauthenticated users to the menu page
@@ -534,9 +542,127 @@ Route::get('/cycleope7', function () {
     return view('cycleopepages.cycleope7');
 })->name('cycleope7')->middleware('auth:web');
 
+Route::get('/cycleope8', function () {
+    return view('cycleopepages.cycleope8');
+})->name('cycleope8');
+
+Route::get('/cycleope9', function () {
+    return view('cycleopepages.cycleope9');
+})->name('cycleope9');
+
+Route::get('/cycleope10', function () {
+    return view('cycleopepages.cycleope10');
+})->name('cycleope10');
+
+Route::get('/cycleope11', function () {
+    return view('cycleopepages.cycleope11');
+})->name('cycleope11');
+
+
+Route::get('/cycleope12', function () {
+    return view('cycleopepages.cycleope12');
+})->name('cycleope12');
+
+Route::get('/cycleope13', function () {
+    return view('cycleopepages.cycleope13');
+})->name('cycleope13');
+
+Route::get('/cycleope14', function () {
+    return view('cycleopepages.cycleope14');
+})->name('cycleope14');
+
+Route::get('/cycleope15', function () {
+    return view('cycleopepages.cycleope15');
+})->name('cycleope15');
+
+Route::get('/cycleope16', function () {
+    return view('cycleopepages.cycleope16');
+})->name('cycleope16');
+Route::get('/cycleope17', function () {
+    return view('cycleopepages.cycleope17');
+})->name('cycleope17');
+
+
+Route::get('/cycleope18', function () {
+    return view('cycleopepages.cycleope18');
+})->name('cycleope18');
+
+Route::get('/cycleope19', function () {
+    return view('cycleopepages.cycleope19');
+})->name('cycleope19');
+Route::get('/cycleope20', function () {
+    return view('cycleopepages.cycleope20');
+})->name('cycleope20');
+Route::get('/cycleope21', function () {
+    return view('cycleopepages.cycleope21');
+})->name('cycleope21');
+
+
+Route::get('/cycleope22', function () {
+    return view('cycleopepages.cycleope22');
+})->name('cycleope22');
+
+Route::get('/cycleope23', function () {
+    return view('cycleopepages.cycleope23');
+})->name('cycleope23');
+
+Route::get('/cycleope24', function () {
+    return view('cycleopepages.cycleope24');
+})->name('cycleope24');
+Route::get('/cycleope25', function () {
+    return view('cycleopepages.cycleope25');
+})->name('cycleope25');
+
+Route::get('/cycleope26', function () {
+    return view('cycleopepages.cycleope26');
+})->name('cycleope26');
+Route::get('/cycleope27', function () {
+    return view('cycleopepages.cycleope27');
+})->name('cycleope27');
+
+Route::get('/cycleope28', function () {
+    return view('cycleopepages.cycleope28');
+})->name('cycleope28');
+
+Route::get('/cycleope29', function () {
+    return view('cycleopepages.cycleope29');
+})->name('cycleope29');
+
+/*Quizzes routes*/
+
+Route::get('/quizzesmain', function () {
+    return view('Quizzes.quizzesmain');
+})->name('quizzesmain');
+
+
+Route::get('/quizzeseasy', function () {
+    return view('Quizzes.quizzeseasy');
+})->name('quizzeseasy');
+
+Route::get('/quizzeshard', function () {
+    return view('Quizzes.quizzeshard');
+})->name('quizzeshard');
+
 
     Route::match(['get', 'post'], '/ulogout', [UserController::class, 'ulogout'])->name('ulogout');
+
+    Route::post('/save-score', [ScoreController::class, 'save'])->name('save-score');
+    //med
+    Route::post('/save-mediumscore', [QuizController::class, 'saveMediumScore'])->name('save-mediumscore');
+    //hard
+    Route::post('/save-hard-score', [HardQuizController::class, 'saveHardScore'])->name('save-hard-score');
+
+
 });
+
+
+//easy
+Route::post('/save-score', [ScoreController::class, 'save'])->name('save-score');
+//medium
+Route::post('/save-mediumscore', [QuizController::class, 'saveMediumScore'])->name('save-mediumscore');
+
+//hard
+Route::post('/save-hard-score', [HardQuizController::class, 'saveHardScore'])->name('save-hard-score');
 
 
 

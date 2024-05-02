@@ -15,7 +15,7 @@
                                     <div class="text-center">
                                         <!-- <h4 class="mt-1 mb-5 pb-1">MinaDrillBlast</h4> -->
 
-                                        <img class="image" src={{ asset('img/LOGO.png') }}  style="width: 250px;" alt="Mineblast Image"/>
+                                        <img class="image" src={{ asset('img/LOGO.png') }}  style="width: 250px;" alt="Mineblast"/>
                                     </div>
 
                                     <form method="POST" action="{{ route('ulogin') }}">

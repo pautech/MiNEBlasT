@@ -153,8 +153,42 @@
             
         </div>
         <button onclick="calculateScore()">Submit</button>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#scoreModal">
+  Show Total Score</button>
         <div id="totalScore"></div>
     </div>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="scoreModal" tabindex="-1" aria-labelledby="scoreModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title text-center" id="scoreModalLabel">Drilling Quiz</h4>
+                
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <!-- Display total score here -->
+                <h3>Your Score for this Quiz </h3>
+                <p id="totalScoreModal"> </p>
+                <div class="modal-footer">
+                    <button class="btn btn-primary print-button" onclick="printModalContent()">Print</button>
+                    <button type="button" class="btn btn-secondary close-button" data-bs-dismiss="modal">Close</button>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
 
 
     <script>
@@ -219,10 +253,53 @@
     // Repeat the same process for other questions
 
     // Display total score
-    document.getElementById("totalScore").innerHTML = "Total Score: " + totalScore;
+    //document.getElementById("totalScore").innerHTML = "Total Score: " + totalScore;
+    document.getElementById("totalScoreModal").innerHTML = "Total Score: " + totalScore;
+
+   // Save the score
+   saveScore(totalScore);
+
+    
+}
+
+function saveScore(totalScore) {
+    var token = '{{ csrf_token() }}';
+
+    $.ajax({
+        url: '{{ route('save-score') }}',
+        type: 'POST',
+        data: {
+            _token: token,
+            totalScore: totalScore
+        },
+        success: function(response) {
+            console.log(response);
+        },
+        error: function(xhr) {
+            console.error('Error saving score');
+        }
+    });
+}
+
+function printModalContent() {
+    var printContents = document.getElementById("scoreModal").cloneNode(true);
+    var modalFooter = printContents.querySelector('.modal-footer');
+    modalFooter.style.display = 'none'; // Hide the footer with buttons
+
+    var originalContents = document.body.innerHTML;
+    document.body.innerHTML = printContents.innerHTML;
+    window.print();
+
+    // Restore the original body content
+    document.body.innerHTML = originalContents;
+
+    // Close the modal
+    $('#scoreModal').modal('hide');
 }
 
     </script>
+
+
 
 
 
