@@ -12,7 +12,7 @@ return new class extends Migration
     public function up()
     {
         Schema::table('users', function (Blueprint $table) {
-            $table->integer('easyscore')->nullable()->default(0);
+            $table->integer('mediumscore')->nullable()->default(0);
         });
     }
     
@@ -23,7 +23,7 @@ return new class extends Migration
     public function down()
     {
         Schema::table('users', function (Blueprint $table) {
-            $table->dropColumn('easyscore');
+            $table->dropColumn('mediumscore');
         });
     }
     
