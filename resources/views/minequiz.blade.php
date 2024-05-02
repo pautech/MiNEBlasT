@@ -5,10 +5,31 @@
 <div class="d-flex justify-content-center align-items-center main-quiz1">
     <div class="d-flex justify-content-center align-items-center flex-column shadow-lg main-quiz p-5 border-0 rounded">
         <div id="quiz" class="container"></div>
-        <button type="button" id="submit" class="btn bg-white shadow-lg">Submit</button>
+        <button type="button" id="submit" class="btn bg-success shadow-lg">Submit</button>
         <button id="next" class="btn bg-white shadow-lg">Next</button>
         <div id="result"></div>
         <button id="play-again" class="btn bg-white shadow-lg mt-2" style="display: none;">Play Again</button>
+        <button id="show-result" class="btn bg-primary shadow-lg mt-2">Show Result</button>
+    </div>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="resultModal" tabindex="-1" aria-labelledby="resultModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="resultModalLabel">Quiz Result</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div id="resultContent"></div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" id="printResult" class="btn btn-primary">Print</button>
+            </div>
+        </div>
     </div>
 </div>
 
@@ -96,7 +117,7 @@
     }
 
     function showResults() {
-        resultContainer.innerHTML = `You scored ${medscore} out of ${quizData.length}`;
+       // resultContainer.innerHTML = `You scored ${medscore} out of ${quizData.length}`;
         playAgainButton.style.display = "inline-block";
 
         // Save the score
@@ -165,6 +186,55 @@
 }
 
 
+const showResultButton = document.getElementById("show-result");
+const resultModal = new bootstrap.Modal(document.getElementById('resultModal'));
+const resultContent = document.getElementById("resultContent");
+
+showResultButton.addEventListener("click", () => {
+    resultContent.innerHTML = `You scored ${medscore} out of ${quizData.length}`;
+    resultModal.show();
+});
+
+function printResult() {
+    const scoreMessage = "Your Score is ";
+    const score = `${scoreMessage}${medscore} out of ${quizData.length}`;
+
+    const modalContent = document.getElementById('resultModal').cloneNode(true);
+    const modalFooter = modalContent.querySelector('.modal-footer');
+    modalFooter.style.display = 'none'; // Hide the footer with buttons
+
+    const iframe = document.createElement('iframe');
+    iframe.style.display = 'none';
+    document.body.appendChild(iframe);
+
+    const iframeDocument = iframe.contentDocument;
+    const printWindow = iframe.contentWindow;
+
+    iframeDocument.write('<html><head><title>Minadrillblast Quiz Result</title>');
+    iframeDocument.write('<style>h3 { text-align: center; }</style>'); // Center the h3 element
+    iframeDocument.write('</head><body>');
+    iframeDocument.write(`<h3>${score}</h3>`);
+
+    iframeDocument.write('</body></html>');
+    iframeDocument.close();
+
+    printWindow.focus();
+    printWindow.print();
+
+    document.body.removeChild(iframe);
+    modalFooter.style.display = 'block'; // Show the footer after printing
+}
+
+
+// Add an event listener to the print button
+const printButton = document.getElementById("printResult");
+printButton.addEventListener("click", printResult);
+
+
+
+
 </script>
+
+
 
 @endsection
