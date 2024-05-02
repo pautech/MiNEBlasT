@@ -87,4 +87,64 @@
             </div>
         </div>
     </section>
+
+
+<!-- Modal -->
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-backdrop="static">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Privacy Policy and Term and Conditions</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <h4>Privacy Policy:</h4>
+        <p class="text-justify">Your privacy is our priority. We collect and store your name, username, password, and scores to personalize your experience on our website and improve our services. Your information is kept confidential and is not shared with third parties without your explicit consent.</p>
+       <h4>Terms and Conditions:    </h4>
+        <p class="text-justify">By using our website, you agree to provide accurate and up-to-date information, including your name, username, and password. Your username and password are confidential and should not be shared with anyone. We are committed to safeguarding your data and will not disclose it to third parties without your permission, except as required by law. You are responsible for maintaining the security of your account and for any actions taken using your username and password. We reserve the right to suspend or terminate your account if we suspect any unauthorized use or violation of our terms.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary close1" data-dismiss="modal">Agree</button>
+        <button type="button" class="btn btn-primary" id="textToSpeech">Speak</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- JavaScript to trigger the modal automatically and close it on button click -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $('#exampleModal').modal('show');
+
+        // Close modal on button click
+        $('.close').on('click', function() {
+            window.speechSynthesis.cancel(); // Stop text-to-speech
+            $('#exampleModal').modal('hide');
+        });
+        $('.close1').on('click', function() {
+            window.speechSynthesis.cancel(); // Stop text-to-speech
+            $('#exampleModal').modal('hide');
+        });
+
+        // Text to Speech functionality
+        $('#textToSpeech').on('click', function() {
+            var text = '';
+            $('p').each(function() {
+                text += $(this).text() + ' ';
+            });
+            var speech = new SpeechSynthesisUtterance();
+            speech.lang = 'en-US';
+            speech.text = text;
+            window.speechSynthesis.speak(speech);
+        });
+    });
+</script>
+
+        
 @endsection
