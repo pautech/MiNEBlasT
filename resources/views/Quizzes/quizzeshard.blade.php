@@ -233,6 +233,10 @@ function shuffleArray(array) {
     function showResults() {
         resultContainer.innerHTML = `You scored ${score} out of ${quizData.length}`;
         playAgainButton.style.display = "inline-block";
+
+        // Save the score
+        savehardScore(score);
+
     }
 
     function nextQuestion() {
@@ -272,6 +276,27 @@ function shuffleArray(array) {
     playAgainButton.addEventListener("click", playAgain);
 
     
+
+
+//to save score in the database
+    function savehardScore(score) {
+    var token = '{{ csrf_token() }}';
+
+    $.ajax({
+        url: '{{ route('save-hard-score') }}',
+        type: 'POST',
+        data: {
+            _token: token,
+            totalScore: score
+        },
+        success: function(response) {
+            console.log(response);
+        },
+        error: function(xhr) {
+            console.error('Error saving score');
+        }
+    });
+}
 
    
 </script>
