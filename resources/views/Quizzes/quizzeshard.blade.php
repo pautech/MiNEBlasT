@@ -280,25 +280,26 @@ function shuffleArray(array) {
 
 //to save score in the database
 function savehardScore(score) {
-    var token = '{{ csrf_token() }}';
+    var token = '{{ csrf_token() }}'; // Make sure this JavaScript is in a Blade file
 
     $.ajax({
         url: '{{ route('save-hard-score') }}',
         type: 'POST',
         data: {
             _token: token,
-            totalScore: score
+            hardscore: score
         },
         success: function(response) {
             console.log('Score saved successfully');
             console.log(response); // If you expect a response, you can log it here
         },
         error: function(xhr, status, error) {
-            console.error('Error saving score:', error); // Log the error message
+            console.error('Error saving score paulo:', error); // Log the error message
             console.log(xhr.responseText); // Log the full response text for more details
         }
     });
 }
+
 
 
    
