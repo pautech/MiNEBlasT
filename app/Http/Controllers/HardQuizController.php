@@ -3,27 +3,25 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth; // Import the Auth facade
+use Illuminate\Support\Facades\Auth;
 
 class HardQuizController extends Controller
 {
-    //
-
-    public function savehardScore(Request $request)
+    public function saveHardScore(Request $request)
     {
-        // Validate the request
-        $request->validate([
-            'score' => 'required|integer', // Assuming medscore is an integer
-        ]);
-
         // Get the authenticated user
         $user = Auth::user();
 
-        // Update the mediumscore in the users table
-        $user->hardscore = $request->score;
-        $user->save(); // Save the changes to the database
+        // Validate the request
+        $request->validate([
+            'hardscore' => 'required|integer',
+        ]);
+
+        // Update the authenticated user's hardscore
+        $user->hardscore = $request->hardscore;
+        $user->save();
 
         // Return a response
-        return response()->json(['message' => 'Hard score saved successfully'], 200);
+        return response()->json(['message' => 'Score saved successfully'], 200);
     }
 }
