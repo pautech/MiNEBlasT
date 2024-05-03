@@ -75,4 +75,67 @@
             </div>
         </div>
     </section>
+
+
+
+
+    <!-- Modal -->
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-backdrop="static">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Notice!!!</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p class="text-justify"> Your Username must be firstname.lastname all in lower case</p>
+        <h5>Example:</h5>
+        <p class="text-justify"> firstname: John</p>
+        <p class="text-justify"> lastname: Wick</p>
+        <h6>Your Username must is</h6>
+        <p class="text-justify"> john.wick </p>
+       
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary close1" data-dismiss="modal">Close</button>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- JavaScript to trigger the modal automatically and close it on button click -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $('#exampleModal').modal('show');
+
+        // Close modal on button click
+        $('.close').on('click', function() {
+            window.speechSynthesis.cancel(); // Stop text-to-speech
+            $('#exampleModal').modal('hide');
+        });
+        $('.close1').on('click', function() {
+            window.speechSynthesis.cancel(); // Stop text-to-speech
+            $('#exampleModal').modal('hide');
+        });
+
+        // Text to Speech functionality
+        $('#textToSpeech').on('click', function() {
+            var text = '';
+            $('p').each(function() {
+                text += $(this).text() + ' ';
+            });
+            var speech = new SpeechSynthesisUtterance();
+            speech.lang = 'en-US';
+            speech.text = text;
+            window.speechSynthesis.speak(speech);
+        });
+    });
+</script>
 @endsection
