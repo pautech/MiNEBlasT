@@ -95,7 +95,7 @@
         <h5>Example:</h5>
         <p class="text-justify"> firstname: John</p>
         <p class="text-justify"> lastname: Wick</p>
-        <h6>Your Username must is</h6>
+        <h6>Your Username is</h6>
         <p class="text-justify"> john.wick </p>
        
       </div>
