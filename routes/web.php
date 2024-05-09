@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ScoreController;
 use App\Http\Controllers\QuizController;
 use App\Http\Controllers\HardQuizController;
+use App\Http\Controllers\GoogleSocialiteController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -676,3 +677,7 @@ Route::get('/drilling11', [UserController::class, 'quizBanner'])->name('drill11'
 
 Route::get('/drilling15', [UserController::class, 'quizBanner1'])->name('drill15');
 Route::post('/chat', 'App\Http\Controllers\ChatController');
+
+
+Route::get('auth/google', [GoogleSocialiteController::class, 'redirectToGoogle']);  // redirect to google login
+Route::get('callback/google', [GoogleSocialiteController::class, 'handleCallback']);    // callback route after google account chosen

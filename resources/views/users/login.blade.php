@@ -48,8 +48,10 @@
                                                 </span>
                                             @enderror
                                         </div>
+                                       
                                         <div class="text-center pt-1 mb-5 pb-1">
-                                            <button class="btn  btn-block fa-lg  mb-3 text-light badge-primary shadow"style="background-color: #b4a07d" type="submit">Log In</button>
+                                           
+                                            <button class="btn  btn-block fa-lg  mb-3 text-light badge-primary shadow"style="background-color: #b4a07d" type="submit">Sign In</button>
                                             <a class="text-muted" href="#!">Forgot password?</a>
                                         </div>
 
@@ -59,6 +61,7 @@
                                         </div>
 
                                     </form>
+                                    <a href="{{ url('auth/google') }}""><button class="btn  btn-block fa-lg  mb-3 text-light badge-primary shadow"style="background-color: #b4a07d">Sign in with Google</button></a>
 
                                 </div>
                             </div>
