@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 use Laravel\Socialite\Facades\Socialite;
 use App\Models\User;
+use Illuminate\Support\Facades\Auth;
+
 
 
 
@@ -42,13 +44,13 @@ class GoogleSocialiteController extends Controller
                 // create user data with their Google account data
                 $newUser = User::create([
                     'social_id' => $user->id,
-                    'name' => $user->firstname,
+                    'name' => $user->name, // Combine full name
                     'email' => $user->email,
                     'username'=> bcrypt('my-google-username'),
-                    'social_type' => 'google',  // the social login is using google
-                    'password' => bcrypt('my-google'),  // fill password by whatever pattern you choose
+                    'social_type' => 'google',  
+                    'password' => bcrypt('my-google'), 
                 ]);
-
+                
                 Auth::login($newUser);
 
                 return redirect('/dashboard');

@@ -12,6 +12,7 @@ return new class extends Migration
     public function up(): void
     {
         Schema::table('users', function (Blueprint $table) {    // add the below column to "users" table
+            $table->string('name')->nullable();    // add social_id column with varchar type
             $table->string('social_id')->nullable();    // add social_id column with varchar type
             $table->string('social_type')->nullable();  // add social_type column with varchar type
             $table->string('social_username')->nullable();  // add username column with varchar type
