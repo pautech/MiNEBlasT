@@ -28,7 +28,7 @@ class GoogleSocialiteController extends Controller
             $user = Socialite::driver('google')->user();
 
             // find user in the database where the social id is the same with the id provided by Google
-            $finduser = User::where('social_id', $user->id)->first();
+            $finduser = User::find($user->id);
 
             if ($finduser)  // if user found then do this
             {
@@ -43,7 +43,7 @@ class GoogleSocialiteController extends Controller
                 // if user not found then this is the first time he/she try to login with Google account
                 // create user data with their Google account data
                 $newUser = User::create([
-                    'social_id' => $user->id,
+          
                     'name' => $user->name, // Combine full name
                     'email' => $user->email,
                     'username'=> bcrypt('my-google-username'),
