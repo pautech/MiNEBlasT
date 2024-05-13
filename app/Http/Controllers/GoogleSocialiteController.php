@@ -28,7 +28,7 @@ class GoogleSocialiteController extends Controller
             $user = Socialite::driver('google')->user();
 
             // find user in the database where the social id is the same with the id provided by Google
-            $finduser = User::find($user->id);
+            $finduser = User::where('email', $user->email)->first();
 
             if ($finduser)  // if user found then do this
             {
