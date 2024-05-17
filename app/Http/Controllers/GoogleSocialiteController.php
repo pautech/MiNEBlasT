@@ -46,6 +46,8 @@ class GoogleSocialiteController extends Controller
           
                     'name' => $user->name, // Combine full name
                     'email' => $user->email,
+                    'firstname' => '',
+                    'lastname' => '',
                     'username'=> bcrypt('my-google-username'),
                     'social_type' => 'google',  
                     'password' => bcrypt('my-google'), 
