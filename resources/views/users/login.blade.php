@@ -19,46 +19,50 @@
                                     </div>
 
                                     <form method="POST" action="{{ route('ulogin') }}">
-                                        @csrf
+                                                @csrf
 
-                                        <!-- <p>Please login to your account</p> -->
+                                                <!-- <p>Please login to your account</p> -->
 
-                                        <div class="form-outline mb-4">
-                                            <label class="form-label" for="username">Username</label>
-                                            <input type="text" id="username" class="form-control @error('username') is-invalid @enderror"
-                                                name="username" value="{{ old('username') }}" required autocomplete="username" autofocus />
-                                            @error('username')
-                                                <span class="invalid-feedback" role="alert">
-                                                    <strong>{{ $message }}</strong>
-                                                </span>
-                                            @enderror
-                                        </div>
+                                                <div class="form-outline mb-4">
+                                                    <label class="form-label" for="username">Username</label>
+                                                    <input type="text" id="username" class="form-control @error('username') is-invalid @enderror"
+                                                        name="username" value="{{ old('username') }}" required autocomplete="username" autofocus />
+                                                    @error('username')
+                                                        <span class="invalid-feedback" role="alert">
+                                                            <strong>{{ $message }}</strong>
+                                                        </span>
+                                                    @enderror
+                                                </div>
 
-                                        <div class="form-outline mb-4">
-                                            <label class="form-label" for="password">Password</label>
-                                            <input type="password" id="password" class="form-control @error('password') is-invalid @enderror passkey"
-                                                name="password" required autocomplete="current-password" />
-                                                <span class="password-toggle-icon float-right">
-                                                    <i class="bi bi-eye-slash" id="togglePassword"></i>
-                                                </span>
-                                            <!-- <button type="button" id="togglePassword" class="btn btn-secondary">Show</button> -->
-                                            @error('password')
-                                                <span class="invalid-feedback" role="alert">
-                                                    <strong>{{ $message }}</strong>
-                                                </span>
-                                            @enderror
-                                        </div>
-                                        <div class="text-center pt-1 mb-5 pb-1">
-                                            <button class="btn  btn-block fa-lg  mb-3 text-light badge-primary shadow"style="background-color: #b4a07d" type="submit">Log In</button>
-                                            <a class="text-muted" href="#!">Forgot password?</a>
-                                        </div>
+                                                <div class="form-outline mb-4">
+                                                    <label class="form-label" for="password">Password</label>
+                                                    <input type="password" id="password" class="form-control @error('password') is-invalid @enderror passkey"
+                                                        name="password" required autocomplete="current-password" />
+                                                        <span class="password-toggle-icon float-right">
+                                                            <i class="bi bi-eye-slash" id="togglePassword"></i>
+                                                        </span>
+                                                    <!-- <button type="button" id="togglePassword" class="btn btn-secondary">Show</button> -->
+                                                    @error('password')
+                                                        <span class="invalid-feedback" role="alert">
+                                                            <strong>{{ $message }}</strong>
+                                                        </span>
+                                                    @enderror
+                                                </div>
+                                            
+                                                <div class="text-center pt-1 mb-5 pb-1">
+                                                
+                                                    <button class="btn  btn-block fa-lg  mb-3 text-light badge-primary shadow"style="background-color: #b4a07d" type="submit">Sign In</button>
+                                                    <a href="{{ url('auth/google') }}" class="btn btn-block fa-lg  mb-3 text-light badge-primary shadow" style="background-color: #b4a07d">Sign in with Google</a>
+                                                    <a class="text-muted" href="#!">Forgot password?</a>
+                                                </div>
 
-                                        <div class="d-flex align-items-center justify-content-center pb-4">
-                                            <p class="mb-0 me-2">Don't have an account?</p>
-                                            <a type="button" class="btn create-btn text-decoration-underline" href="{{ route('registration') }}">Create Account</a>
-                                        </div>
+                                                <div class="d-flex align-items-center justify-content-center pb-4">
+                                                    <p class="mb-0 me-2">Don't have an account?</p>
+                                                    <a type="button" class="btn create-btn text-decoration-underline" href="{{ route('registration') }}">Create Account</a>
+                                                </div>
 
                                     </form>
+                                  
 
                                 </div>
                             </div>
